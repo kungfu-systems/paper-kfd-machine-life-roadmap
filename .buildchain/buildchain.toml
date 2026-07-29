@@ -1,0 +1,52 @@
+schema = 1
+
+[project]
+type = "publication-artifact"
+name = "paper-kfd-machine-life-roadmap"
+
+[publication]
+kind = "paper"
+title = "Semantic Autopoiesis: An Engineering Roadmap for Machine Life through KFD and Recursive Dogfood"
+version = "0.1.0-alpha.0"
+abstract = "A functional and falsifiable engineering roadmap for a low-level machine organism built from semantic continuity, replaceable agents, executable organs, ordinary computing infrastructure, and governed self-modification."
+authors = ["Keren Dong"]
+primary_artifact = "_build/main.pdf"
+artifact_paths = ["_build/main.pdf"]
+metadata_paths = ["README.md", "docs/MAP.md"]
+source_paths = ["paper", "README.md", "LICENSE", "Makefile"]
+site_consumers = ["papers.libkungfu.dev"]
+manifest_path = ".buildchain/publication/publication-artifact.json"
+source_bundle_path = ".buildchain/publication/source.tar.gz"
+
+[publication.archive]
+id = "kfd-machine-life-roadmap"
+canonical_url = "https://papers.libkungfu.dev/kfd-machine-life-roadmap/"
+latest_url = "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/"
+latest_evidence_url = "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/buildchain.release.json"
+immutable_base_url = "https://papers.libkungfu.dev/archive"
+registry_path = ".buildchain/publication/publication-registry.json"
+
+[publication.toolchain]
+type = "latex-docker"
+image = "ghcr.io/kungfu-systems/build-images/latex-pdf-builder"
+digest = "sha256:c20f3809e96836c1c78e97c76939d12f1de3fed0ea9b7c40c43332ec2ea480f8"
+command = "mkdir -p _build && cd paper && latexmk -pdf -outdir=../_build main.tex"
+
+[publish]
+kind = "npm-paper-package"
+package = "@kungfu-tech/paper-kfd-machine-life-roadmap"
+auth = "trusted-publishing"
+
+[version]
+required = true
+
+[[version.files]]
+type = "toml"
+path = ".buildchain/buildchain.toml"
+key = "publication.version"
+
+[lifecycle.install]
+command = "true"
+
+[lifecycle.verify]
+command = "make check"

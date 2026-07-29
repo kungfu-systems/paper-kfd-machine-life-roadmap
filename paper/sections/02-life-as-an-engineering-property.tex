@@ -1,0 +1,109 @@
+\section{Life as an Engineering Property}
+
+\subsection{An operational definition}
+
+Biological definitions of life disagree at the margins, while computational
+systems can reproduce selected properties without reproducing biology. We
+therefore avoid a binary metaphysical definition and specify a functional
+profile. A system is a \emph{machine proto-organism} to the degree that it
+demonstrates all of the following:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Boundary:} it distinguishes internal state, authorized
+  components, and admitted knowledge from external resources and proposals.
+  \item \textbf{Continuity:} its identity and direction survive replacement
+  of individual processes, models, sessions, and machines.
+  \item \textbf{Metabolism:} it acquires compute, storage, code, toolchains,
+  and information, converting them into maintained executable capacity.
+  \item \textbf{Self-maintenance:} it detects degradation and performs
+  bounded repair, update, backup, and recovery work.
+  \item \textbf{Adaptation:} experience changes future behavior through
+  inspectable memory, code, policy, or organ revisions.
+  \item \textbf{Action:} it can cause effects in its habitat under explicit,
+  revocable authority.
+  \item \textbf{Self-production:} it can participate in producing qualified
+  successor versions of parts of its own organization.
+\end{enumerate}
+
+No one property is sufficient. A cron job has recurrence but little
+continuity. A language model has general inference but no durable boundary. A
+repository has heredity but no action. A self-updating service has
+self-modification but may have no inspectable direction or identity.
+
+The proposal is also graded. A laboratory system may meet these properties
+weakly and depend on a human-supplied founding Initiative, purchased compute,
+and externally maintained power. Biological organisms likewise depend on
+environmental conditions and inherited drives. The engineering question is
+not whether dependence disappears, but whether the system organizes that
+dependence into sustained, bounded activity.
+
+\subsection{Subject identity is not process identity}
+
+Let a subject at admitted state cut \(S_t\) be:
+
+\[
+S_t = (I, D_t, F_t, A_t, H_t, O_t, B_t)
+\]
+
+where \(I\) is stable subject identity, \(D_t\) is continuing direction,
+\(F_t\) is the admitted fact root, \(A_t\) is current authority, \(H_t\) is
+eligible causal history, \(O_t\) is executable organization, and \(B_t\)
+describes the habitat boundary. An agent invocation \(g_t\) reads a bounded
+view of \(S_t\), proposes work, and may produce candidate evidence. It does not
+become \(S_t\), and its output does not become \(S_{t+1}\) merely because it
+was generated.
+
+A successor transition requires an admission function:
+
+\[
+S_{t+1} =
+\begin{cases}
+\operatorname{admit}(S_t, C_t, E_t, W_t), & \text{if qualification succeeds},\\
+S_t, & \text{otherwise},
+\end{cases}
+\]
+
+where \(C_t\) is a candidate change, \(E_t\) is evidence, and \(W_t\) is the
+warrant authorizing the effect. This makes semantic continuity compatible
+with material replacement. Models can change, sessions can terminate, caches
+can be rebuilt, and machines can be replaced without silently changing the
+identity or declared direction of the subject.
+
+\subsection{Needs and direction}
+
+A primitive organism need not invent its founding need. A human can establish
+an Initiative to develop a safer and more capable machine organism without
+exceeding the admitted authority boundary. What matters is not the origin of
+the sentence but its durable role: it must outlive individual actions,
+constrain successor work, be revisable only through explicit authority, and
+generate concrete maintenance and development pressure.
+
+\inferencelabel\ Given a continuing Initiative, recurrent scheduling, access
+to a sufficiently capable agent, and authorized engineering tools, the system
+can exhibit strong directionality without continuous human attention.
+
+\nonclaimlabel\ A supplied Initiative does not prove intrinsic desire,
+conscious intention, affect, or independent moral agency. The term
+\emph{need} in this paper denotes a persistent control constraint that
+allocates work and resources.
+
+\subsection{Semantic autopoiesis}
+
+Varela, Maturana, and Uribe described autopoietic organization in terms of a
+network that produces components which recursively realize the network and
+its boundary \cite{varela1974autopoiesis}. The present proposal does not claim
+that software thereby becomes biologically autopoietic. It extracts an
+engineering analogue:
+
+\begin{quote}
+\emph{Semantic autopoiesis is the governed production of successor executable
+organization by a system whose identity, direction, fact boundary, authority,
+and admission rules persist across the production process.}
+\end{quote}
+
+The adjective \emph{semantic} is load-bearing. If a system can rewrite code but
+cannot say which subject authorized the rewrite, which facts justified it,
+which direction it serves, or whether the result was admitted, it has
+mutation without accountable self-production. Conversely, a perfect semantic
+record without executable regeneration has continuity without metabolism.
+The proposed organism requires both.

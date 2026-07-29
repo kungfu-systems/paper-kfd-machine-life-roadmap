@@ -1,0 +1,10 @@
+{
+  "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+  "private": true,
+  "description": "Source repository for the KFD machine-life engineering roadmap paper",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap.git"
+  }
+}

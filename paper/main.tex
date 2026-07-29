@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{amsmath}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black
+}
+
+\newcommand{\factlabel}{\textbf{Observed fact.}}
+\newcommand{\inferencelabel}{\textbf{Engineering inference.}}
+\newcommand{\hypothesislabel}{\textbf{Testable hypothesis.}}
+\newcommand{\nonclaimlabel}{\textbf{Non-claim.}}
+
+\title{Semantic Autopoiesis:\\
+An Engineering Roadmap for Machine Life through KFD and Recursive Dogfood}
+\author{Keren Dong\\Kungfu Origin Technology Limited\\
+\href{mailto:keren.dong@kungfu.link}{keren.dong@kungfu.link}}
+\date{Alpha 0.1.0 --- July 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Work on machine intelligence usually concentrates either on more capable
+models or on anthropomorphic robots. This paper examines a different object:
+a low-level machine organism assembled from ordinary servers, operating
+systems, compilers, build tools, caches, gates, source code, executable
+extensions, and replaceable reasoning agents. The proposal has two
+load-bearing mechanisms. First, a KFD-shaped semantic kernel preserves
+identity, direction, admitted facts, authority, and work continuity across
+process and model replacement. Second, recursive dogfood lets the system
+develop, qualify, admit, and use changes to its own executable organization.
+We call this combination \emph{semantic autopoiesis}. The term denotes a
+functional engineering hypothesis, not a claim of biological life,
+sentience, or phenomenal consciousness.
+
+We derive a minimal architecture in which scheduled heartbeats instantiate
+fresh agents, verified work history restores relevant experience, KFX
+extensions act as executable organs, and Buildchain-like qualification turns
+candidate self-modifications into bounded successor states. We then examine a
+dated Kungfu implementation snapshot. Native Initiative/Assignment work,
+Episode and Project Cut evidence, Qualified Assignment Core, a verified Work
+History Selector, KFX qualification, and recursive dogfood provide concrete
+parts of the proposed loop; an open Product Release Cut boundary and the
+absence of longitudinal survival trials prevent a claim that the organism
+already exists as a completed system. Finally, we offer a staged roadmap and
+falsifiable evaluations for continuity, self-maintenance, adaptation,
+bounded autonomy, recovery, and human intervention. The central claim is
+modest but consequential: current software engineering materials may already
+be sufficient to construct and experimentally study a primitive form of
+machine life before either general intelligence or humanoid embodiment is
+available.
+\end{abstract}
+
+\input{sections/01-introduction}
+\input{sections/02-life-as-an-engineering-property}
+\input{sections/03-semantic-kernel}
+\input{sections/04-recursive-dogfood}
+\input{sections/05-material-anatomy}
+\input{sections/06-kungfu-evidence}
+\input{sections/07-prototype-and-roadmap}
+\input{sections/08-evaluation-and-safety}
+\input{sections/09-related-work}
+\input{sections/10-discussion}
+\input{sections/11-conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
