@@ -31,3 +31,4 @@ jobs:
       artifact-name: paper-kfd-machine-life-roadmap
       artifact-paths: _build/main.pdf
       release-passport-product-name: Semantic Autopoiesis
+    secrets: inherit
