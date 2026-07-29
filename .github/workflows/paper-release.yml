@@ -16,9 +16,12 @@ jobs:
   paper-release:
     uses: kungfu-systems/buildchain/.github/workflows/paper-release.yml@v3
     permissions:
+      actions: read
+      checks: write
       contents: write
       id-token: write
       issues: write
+      pull-requests: read
     with:
       buildchain-ref: ${{ inputs['buildchain-ref'] || (startsWith(github.ref_name, 'alpha/') && 'v3-alpha' || 'v3') }}
       buildchain-contract-lock-path: ${{ startsWith(github.ref_name, 'alpha/') && '.buildchain/alpha-contract-lock.json' || '.buildchain/contract-lock.json' }}
