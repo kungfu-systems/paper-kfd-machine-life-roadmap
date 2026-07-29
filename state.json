@@ -16,14 +16,27 @@
   "state_ref": "buildchain/release-state/0-1-0-alpha-1",
   "state_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-state/v0.1.0-alpha.1.json",
   "evidence_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-evidence/v0.1.0-alpha.1/evidence.json",
-  "state": "publishing",
-  "previous_state": "prepared",
+  "state": "published",
+  "previous_state": "publishing",
   "actor": "dongkeren",
   "run_id": "30458491028",
   "superseded_by": "",
   "failure": "",
-  "artifacts": [],
-  "evidence": [],
+  "artifacts": [
+    {
+      "group": "node",
+      "kind": "npm",
+      "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "ref": "0.1.0-alpha.1",
+      "digest": "sha512-75lwk/2nIHN31R9ka7W4ngCTMrAm5Gu2nRNITUMALkNWrlemT3dyLklmUDZZvDJMuxMuEj462BUm4YUfd17qZQ==",
+      "role": "",
+      "required": true
+    }
+  ],
+  "evidence": [
+    ".buildchain/release-evidence/v0.1.0-alpha.1/evidence.json",
+    ".buildchain/release-evidence/v0.1.0-alpha.1/dist-tag-evidence.json"
+  ],
   "created_at": "2026-07-29T13:59:11.260Z",
-  "updated_at": "2026-07-29T13:59:12.628Z"
+  "updated_at": "2026-07-29T13:59:19.274Z"
 }
