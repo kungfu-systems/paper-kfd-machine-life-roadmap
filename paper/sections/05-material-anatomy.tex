@@ -1,8 +1,8 @@
 \section{A Material Anatomy}
 
-\subsection{Kernel, cognition, organs, and body}
+\subsection{Kernel, cognition, organs, regulation, and body}
 
-The proposed architecture separates four layers:
+The proposed architecture separates five functional layers:
 
 \begin{table}[ht]
 \centering
@@ -17,6 +17,10 @@ Cognition & Replaceable local or remote agents &
 Interpret state, reason, plan, communicate, and propose work \\
 Organs & KFX packages, CLIs, adapters, services, and workflows &
 Perform specialized perception, transformation, construction, and action \\
+Homeostatic regulation & Agent Patrol, Dogfood Queue, qualification gates,
+and Deprecation Lifecycle &
+Detect deviation, route repair, reject unfit successors, and retire obsolete
+surfaces \\
 Body and metabolism & Servers, OS kernels, compilers, Buildchain, caches,
 storage, networks, credentials, power &
 Supply persistence, resources, translation, circulation, protection, and
@@ -59,7 +63,10 @@ qualified, and admitted before it becomes part of internal organization.
 \subsection{Metabolism and homeostasis}
 
 Software maintenance becomes metabolism when it is organized around continued
-existence. Examples include:
+existence. It has both constructive and degradative sides: new executable
+capacity must be built and admitted, while obsolete organs, interfaces, and
+compatibility paths must be retired without erasing historical evidence.
+Examples include:
 
 \begin{itemize}[leftmargin=*]
   \item monitoring disk, memory, compute, certificates, dependencies, and
@@ -69,8 +76,17 @@ existence. Examples include:
   \item updating vulnerable dependencies through qualified successor cuts;
   \item backing up semantic roots and testing restoration;
   \item detecting failed organs, reverting them, or selecting alternatives;
+  \item deprecating, migrating, removing, and settling obsolete executable
+  surfaces through an explicit lifecycle;
   \item communicating resource deficits and uncertainty to humans.
 \end{itemize}
+
+In this functional analogy, qualification is anabolic: it turns source,
+compute, and evidence into admitted executable organization. Deprecation is
+catabolic: it removes obsolete current surfaces, releases maintenance
+pressure, and preserves only the history and migration evidence required for
+continuity. A system that can only add organs accumulates technical mass; a
+system that removes them without governed succession destroys its own body.
 
 A body is not just the hardware inventory. It is the maintained organization
 that keeps those resources usable for the Initiative. The same subject may
