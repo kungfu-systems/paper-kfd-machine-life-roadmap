@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "version": "0.1.0-alpha.0",
+  "channel": "alpha",
+  "source_sha": "c5e850b522f47e69f7977c6e0470e11321630b1f",
+  "release_sha": "c5e850b522f47e69f7977c6e0470e11321630b1f",
+  "target_ref": "alpha/v0/v0.1",
+  "release_material_sha": "c5e850b522f47e69f7977c6e0470e11321630b1f",
+  "publish_tooling_sha": "c5e850b522f47e69f7977c6e0470e11321630b1f",
+  "artifacts": [
+    {
+      "group": "node",
+      "kind": "npm",
+      "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "ref": "0.1.0-alpha.0",
+      "digest": "sha512-68bkWYenOTL6yAlaIcV4UiTlXcrI+4QXFV/z7PkhyGAuzT6DchR3nWJ3zL+UX4OUc5OdPpHUx5myz38snK621Q=="
+    }
+  ]
+}
