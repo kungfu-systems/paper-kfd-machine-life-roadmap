@@ -1,4 +1,4 @@
-\section{What Kungfu Already Demonstrates}
+\section{Engineering Evidence from Kungfu}
 
 \subsection{Evidence snapshot}
 
@@ -32,6 +32,15 @@ executable organs and access surfaces \cite{kungfu1784}. \\
 Dogfood queue reconciliation & Merged PR \#1843 &
 Reconciles queue lifecycle evidence, strengthening the recursive work loop
 without proving unattended long-duration autonomy \cite{kungfu1843}. \\
+Agent Patrol & Merged PRs \#1729 and \#1855 &
+Runs a daily protected-source observation lane and captures or deduplicates
+bounded failures as native Dogfood Findings; its authority remains diagnostic
+and prohibits Issue admission or product mutation
+\cite{kungfu1729,kungfu1855}. \\
+Deprecation Lifecycle & Merged PR \#1879 &
+Governs deprecation, removal eligibility, migration evidence, and settlement;
+protected release gates can reject overdue debt, but the lifecycle does not
+autonomously perform the removal \cite{kungfu1879}. \\
 Product Release Cut updater & Open PR \#1817 &
 Candidate checks were green in the inspected run, but the integration remained
 open; a product-level admitted successor boundary was therefore not counted as
@@ -47,13 +56,105 @@ on 29 July 2026.}
 admission surfaces rather than a paper-only architecture. In particular, the
 combination of durable work identity, immutable evidence, qualified body
 selection, verified history selection, executable extension qualification,
-and dogfood lifecycle handling covers several prerequisites of the proposed
-organism.
+scheduled Patrol feedback, dogfood lifecycle handling, and governed
+deprecation covers several prerequisites of the proposed organism.
 
-\inferencelabel\ These mechanisms are composable into a persistent
-agent-replacement loop. The current evidence does not yet establish that they
-have been composed into one bounded subject that autonomously survives,
-maintains itself, and improves its organs over a long interval.
+\inferencelabel\ Kungfu is no longer only a collection of isolated
+prerequisites. These mechanisms form a bounded, partially closed homeostatic
+architecture with real but primitive self-maintenance capacity. The current
+evidence does not yet establish that every edge has been composed into one
+subject that autonomously survives, repairs itself, and improves its organs
+over a long interval.
+
+\subsection{A partial homeostatic architecture}
+
+Agent Patrol supplies periodic observation and a durable error signal. On a
+daily schedule it runs bounded repository-work experiments against protected
+source, classifies failure, and captures or deduplicates a native Dogfood
+Finding. The Dogfood and work-control mechanisms can preserve that signal,
+select eligible history, bind a qualified Assignment body, and give a
+replaceable agent a concrete repair context. Build and admission gates can
+reject an unfit candidate or make a qualified successor executable.
+
+Deprecation Lifecycle closes a different maintenance pressure. It tracks old
+surfaces through deprecation, removal, and settlement; derives when removal is
+due; and can block protected promotion until removal, restoration, or a bounded
+Warrant is evidenced. It therefore acts as controlled catabolism rather than
+unstructured deletion.
+
+Figure~\ref{fig:kungfu-homeostasis} distinguishes implemented local paths from
+the compositional edges that still require an organism-level survival trial.
+
+\clearpage
+\begin{figure}[p]
+\centering
+\begin{tikzpicture}[
+  font=\scriptsize,
+  node distance=8mm and 7mm,
+  box/.style={draw, rounded corners=2pt, align=center, minimum height=9mm,
+    text width=2.55cm, inner sep=4pt},
+  sense/.style={box, fill=black!4},
+  work/.style={box, fill=black!9},
+  body/.style={box, fill=black!14},
+  flow/.style={-{Latex[length=2mm]}, thick},
+  compose/.style={-{Latex[length=2mm]}, thick, dashed},
+  boundary/.style={draw, dashed, rounded corners=2pt, align=center,
+    inner sep=4pt}
+]
+  \coordinate (topmid) at (5.15,0);
+  \node[boundary, text width=14.2cm, above=8mm of topmid] (habitat)
+    {Material habitat and world: servers $\mid$ OS $\mid$ compilers $\mid$
+    caches $\mid$ networks $\mid$ model access $\mid$ humans};
+
+  \node[sense] (patrol) {Agent Patrol\\scheduled observation};
+  \node[work, right=of patrol] (dogfood) {Dogfood Findings\\and Queue};
+  \node[work, right=of dogfood] (selection) {Work selection\\history + qualified core};
+  \node[work, right=of selection] (agent) {Replaceable agent\\reason + act};
+
+  \node[body, below=15mm of patrol] (running) {Admitted KFX organs\\and system state};
+  \node[body, below=15mm of selection] (qualification) {Buildchain gates\\and admission};
+  \node[body, below=12mm of agent] (candidate) {Candidate KFX\\or system change};
+  \node[body, below=11mm of running] (deprecation) {Deprecation Lifecycle\\retire + settle};
+
+  \draw[flow] (patrol) -- (dogfood);
+  \draw[compose] (dogfood) -- (selection);
+  \draw[flow] (selection) -- (agent);
+  \draw[flow] (agent) -- (candidate);
+  \draw[flow] (candidate) -- (qualification);
+  \draw[compose] (qualification) -- (running);
+  \draw[flow] (running) -- (patrol);
+  \draw[flow] (running) -- (deprecation);
+
+  \node[draw, rounded corners=2pt, align=center, text width=14.2cm,
+    inner sep=4pt, below=18mm of deprecation, xshift=5.15cm] (kernel)
+    {KFD / Kungfu semantic kernel: subject identity $\mid$ Initiative $\mid$
+    facts $\mid$ authority $\mid$ causal history $\mid$ admission\\
+    \emph{governs identity, work selection, qualification, and succession}};
+\end{tikzpicture}
+\caption{Kungfu's partial homeostatic architecture. Solid arrows denote
+implemented local paths. Dashed arrows denote feedback or admission edges
+whose unattended organism-level composition remains to be demonstrated.
+The upper boundary is the material habitat; the lower bar is the semantic
+kernel governing the loop. The deprecation branch expresses controlled
+retirement; due work re-enters through the Dogfood and work-control path.}
+\label{fig:kungfu-homeostasis}
+\end{figure}
+\clearpage
+
+\factlabel\ The scheduled Patrol, bounded Finding capture, deprecation audit,
+and protected release enforcement are implemented mechanisms, not proposed
+metaphors.
+
+\inferencelabel\ Their conjunction justifies describing Kungfu as a partial
+engineering homeostat: it periodically detects selected deviations, retains
+them as actionable causal evidence, governs successor admission, and prevents
+obsolete organization from persisting without disposition.
+
+\nonclaimlabel\ Agent Patrol currently covers bounded fixtures, runs daily
+rather than continuously, and cannot admit an Issue or mutate the product.
+Deprecation Lifecycle governs when and how removal is allowed but does not
+choose or execute the repair. These boundaries prevent a claim of complete
+autonomous self-maintenance.
 
 \subsection{Why Qualified Assignment Core matters}
 
@@ -100,19 +201,24 @@ which warrant.
 
 \subsection{The missing composition proof}
 
-The present gap is not primarily one more intelligent model. It is an
-end-to-end trial binding:
+The present gap is not primarily one more intelligent model. Agent Patrol now
+implements the scheduled observation and Dogfood feedback prefix of the loop,
+while Deprecation Lifecycle supplies a governed retirement path. The remaining
+composition proof is an end-to-end trial binding:
 
 \[
-\text{Initiative} \rightarrow
+\begin{aligned}
+\text{Initiative} &\rightarrow
 \text{heartbeat} \rightarrow
 \text{history selection} \rightarrow
 \text{Assignment Core} \rightarrow
-\text{agent work} \rightarrow
+\text{agent work} \\
+&\rightarrow
 \text{KFX change} \rightarrow
 \text{qualification} \rightarrow
 \text{Product Release Cut} \rightarrow
 \text{next heartbeat}.
+\end{aligned}
 \]
 
 The loop must run repeatedly while retaining exact identity, evidence,

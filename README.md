@@ -2,8 +2,7 @@
 
 This repository tracks the LaTeX source for:
 
-> **Semantic Autopoiesis: An Engineering Roadmap for Machine Life through KFD
-> and Recursive Dogfood**
+> **Semantic Autopoiesis: An Engineering Roadmap for Machine Life**
 
 The paper asks whether a persistent semantic kernel, replaceable reasoning
 agents, recursively developed executable organs, and ordinary computing

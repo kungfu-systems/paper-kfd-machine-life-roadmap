@@ -2,9 +2,12 @@
 
 \subsection{From usage to recursion}
 
-Ordinary dogfooding means using one's own product. Recursive dogfood is
-stronger: the system uses its current engineering organization to improve the
-mechanisms by which it performs future work. A qualifying loop is:
+Ordinary dogfooding closes a product feedback loop: builders use what they
+build. Recursive dogfood closes a self-production loop: the system uses its
+current engineering organization to change the mechanisms by which future
+changes are proposed, constructed, qualified, admitted, and exercised. It is
+therefore not merely repeated maintenance or autonomous coding. A qualifying
+loop is:
 
 \begin{enumerate}[leftmargin=*]
   \item observe friction, failure, opportunity, or environmental change;
@@ -22,8 +25,9 @@ mechanisms by which it performs future work. A qualifying loop is:
 \end{enumerate}
 
 This loop resembles development practice because development practice is the
-present substrate. The novelty is to bind it to a persistent subject and make
-the loop itself recursively available for improvement.
+present substrate. Its machine-life significance comes from binding that
+practice to a persistent subject and making the loop itself recursively
+available for qualified improvement.
 
 \subsection{Heredity, variation, and selection}
 
@@ -64,9 +68,10 @@ insufficient. The qualification membrane should bind at least:
   \item rollback or recovery coordinates.
 \end{itemize}
 
-Buildchain-like systems provide a practical metabolism for this membrane:
-reproducible toolchains digest source into artifacts, provenance records bind
-the process, gates test fitness, and release mechanisms expose only admitted
+Buildchain-like systems provide a practical metabolism for this membrane.
+
+Reproducible toolchains digest source into artifacts. Provenance records bind
+the process; gates test fitness; release mechanisms expose only admitted
 products. KFD supplies the semantics that prevent these technical receipts
 from being mistaken for truth or authority.
 

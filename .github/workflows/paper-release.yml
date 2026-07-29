@@ -14,7 +14,7 @@ on:
 
 jobs:
   paper-release:
-    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@v3
+    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@4282534accd4344ded43b10cae021fc2e709b7f9
     permissions:
       actions: read
       checks: write
