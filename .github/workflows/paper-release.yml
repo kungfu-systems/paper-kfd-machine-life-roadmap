@@ -14,7 +14,7 @@ on:
 
 jobs:
   paper-release:
-    uses: kungfu-systems/buildchain/.github/workflows/paper-release.yml@v3
+    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@v3
     permissions:
       actions: read
       checks: write
@@ -25,7 +25,9 @@ jobs:
     with:
       buildchain-ref: ${{ inputs['buildchain-ref'] || (startsWith(github.ref_name, 'alpha/') && 'v3-alpha' || 'v3') }}
       buildchain-contract-lock-path: ${{ startsWith(github.ref_name, 'alpha/') && '.buildchain/alpha-contract-lock.json' || '.buildchain/contract-lock.json' }}
+      publisher-workflow-path: .github/workflows/paper-release.yml
       toolchain-type: config
       verify-command: make check
       artifact-name: paper-kfd-machine-life-roadmap
+      artifact-paths: _build/main.pdf
       release-passport-product-name: Semantic Autopoiesis
