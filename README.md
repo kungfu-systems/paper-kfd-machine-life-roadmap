@@ -39,6 +39,25 @@ continuity, self-maintenance, adaptation, bounded autonomy, and recovery.
 - [`paper/sections/`](paper/sections/): paper sections.
 - [`paper/references.bib`](paper/references.bib): bibliography.
 - [`docs/MAP.md`](docs/MAP.md): repository map.
+- [`site/brand-site.json`](site/brand-site.json): generated reader bundle for
+  `kungfu.tech`.
+
+## Site Bundle
+
+The npm publication includes a generated brand-site bundle for the canonical
+Machine Life reader on `kungfu.tech`. The bundle derives its complete section
+order and reader Markdown from the LaTeX source while preserving the paper's
+future-facing, functional, falsifiable, and non-consciousness claim boundary.
+
+Regenerate it after changing the paper source or publication metadata:
+
+```sh
+make update-site-bundles
+```
+
+`papers.libkungfu.dev` remains the publication evidence and immutable archive
+host. The brand reader links back to that evidence rather than becoming a
+second publication authority.
 
 ## Build
 
