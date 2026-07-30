@@ -15,6 +15,10 @@
 - `paper/sections/10-discussion.tex` — implications and open questions.
 - `paper/sections/11-conclusion.tex` — bounded conclusion.
 - `paper/references.bib` — bibliography and primary evidence links.
+- `site/brand-site.json` — generated complete reader content for `kungfu.tech`.
+- `site/site-bundles.json` — package-owned site-bundle index and consumer contract.
+- `scripts/update-site-bundles.mjs` — deterministic LaTeX-to-reader projection.
+- `scripts/check-site-bundles.mjs` — source, route, and claim-boundary drift checks.
 
 ## Build and Governance
 

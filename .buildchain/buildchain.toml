@@ -7,14 +7,14 @@ name = "paper-kfd-machine-life-roadmap"
 [publication]
 kind = "paper"
 title = "Semantic Autopoiesis: An Engineering Roadmap for Machine Life"
-version = "0.1.0-alpha.2"
+version = "0.1.0-alpha.3"
 abstract = "A functional and falsifiable engineering roadmap for a low-level machine organism built from semantic continuity, replaceable agents, executable organs, ordinary computing infrastructure, and governed self-modification."
 authors = ["Keren Dong"]
 primary_artifact = "_build/main.pdf"
 artifact_paths = ["_build/main.pdf"]
-metadata_paths = ["README.md", "docs/MAP.md"]
-source_paths = ["paper", "README.md", "LICENSE", "Makefile"]
-site_consumers = ["papers.libkungfu.dev"]
+metadata_paths = ["README.md", "docs/MAP.md", "site/brand-site.json", "site/site-bundles.json"]
+source_paths = ["paper", "README.md", "LICENSE", "Makefile", "scripts", "site"]
+site_consumers = ["kungfu.tech", "papers.libkungfu.dev"]
 manifest_path = ".buildchain/publication/publication-artifact.json"
 source_bundle_path = ".buildchain/publication/source.tar.gz"
 
