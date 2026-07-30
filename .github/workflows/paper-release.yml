@@ -1,34 +1,33 @@
 name: Paper Release
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - "alpha/v*/v*.*"
-      - "release/v*/v*.*"
-  workflow_dispatch:
-    inputs:
-      buildchain-ref:
-        description: "Temporary Buildchain runtime ref for trusted manual validation"
-        required: false
-        default: ""
+      - "alpha/**"
+      - "release/**"
+
+permissions:
+  contents: read
 
 jobs:
   paper-release:
-    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@4282534accd4344ded43b10cae021fc2e709b7f9
+    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@60ac9ca28dc0cc7a06945b45b06f22507c510145
     permissions:
       actions: read
       checks: write
-      contents: write
+      contents: read
       id-token: write
       issues: write
-      pull-requests: write
     with:
-      buildchain-ref: ${{ inputs['buildchain-ref'] || (startsWith(github.ref_name, 'alpha/') && 'v3-alpha' || 'v3') }}
-      buildchain-contract-lock-path: ${{ startsWith(github.ref_name, 'alpha/') && '.buildchain/alpha-contract-lock.json' || '.buildchain/contract-lock.json' }}
+      buildchain-ref: 60ac9ca28dc0cc7a06945b45b06f22507c510145
+      buildchain-contract-lock-path: .buildchain/contract-lock.json
       publisher-workflow-path: .github/workflows/paper-release.yml
       toolchain-type: config
       verify-command: make check
-      artifact-name: paper-kfd-machine-life-roadmap
-      artifact-paths: _build/main.pdf
-      release-passport-product-name: Semantic Autopoiesis
-    secrets: inherit
+      artifact-paths: "_build/main.pdf"
+      release-passport-product-name: "Semantic Autopoiesis: An Engineering Roadmap for Machine Life"
+    secrets:
+      BUILDCHAIN_GENERATED_WRITE_APP_CLIENT_ID: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_APP_CLIENT_ID }}
+      BUILDCHAIN_GENERATED_WRITE_APP_PRIVATE_KEY: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_APP_PRIVATE_KEY }}
+      BUILDCHAIN_GENERATED_WRITE_TOKEN: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_TOKEN }}
