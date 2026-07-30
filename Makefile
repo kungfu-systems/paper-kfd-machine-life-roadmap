@@ -1,4 +1,4 @@
-.PHONY: check pdf clean
+.PHONY: check update-site-bundles pdf clean
 
 check:
 	@test -f paper/main.tex
@@ -7,7 +7,11 @@ check:
 	@grep -Fq '\newcommand{\factlabel}' paper/main.tex
 	@grep -Fq '\newcommand{\inferencelabel}' paper/main.tex
 	@grep -Fq '\newcommand{\hypothesislabel}' paper/main.tex
+	@node scripts/check-site-bundles.mjs
 	@git diff --check
+
+update-site-bundles:
+	@node scripts/update-site-bundles.mjs
 
 pdf:
 	mkdir -p _build
