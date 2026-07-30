@@ -7,6 +7,9 @@ check:
 	@grep -Fq '\newcommand{\factlabel}' paper/main.tex
 	@grep -Fq '\newcommand{\inferencelabel}' paper/main.tex
 	@grep -Fq '\newcommand{\hypothesislabel}' paper/main.tex
+	@grep -Fq 'buildchain-ref: 9d74fb4557e71992db3516b5ba750d57cb9f3521' .github/workflows/verify.yml
+	@grep -Fq "inputs['buildchain-ref'] || 'v3-alpha'" .github/workflows/build.yml
+	@grep -Fq "startsWith(github.ref_name, 'alpha/') && 'v3-alpha' || 'v3'" .github/workflows/paper-release.yml
 	@git diff --check
 
 pdf:
