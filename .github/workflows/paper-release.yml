@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   paper-release:
-    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@2cd4e117742ca39fddd43e4244d01581cae75556
+    uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@4147226415630a0cba6bb3be56f32410fb56c2b1
     permissions:
       actions: read
       checks: write
@@ -21,7 +21,7 @@ jobs:
       issues: write
       pull-requests: write
     with:
-      buildchain-ref: 2cd4e117742ca39fddd43e4244d01581cae75556
+      buildchain-ref: 4147226415630a0cba6bb3be56f32410fb56c2b1
       buildchain-contract-lock-path: .buildchain/contract-lock.json
       publisher-workflow-path: .github/workflows/paper-release.yml
       toolchain-type: config
@@ -29,6 +29,7 @@ jobs:
       artifact-paths: "_build/main.pdf"
       release-passport-product-name: "Semantic Autopoiesis: An Engineering Roadmap for Machine Life"
     secrets:
+      KUNGFU_GOVERNANCE_AUDITOR_APP_PRIVATE_KEY: ${{ secrets.KUNGFU_GOVERNANCE_AUDITOR_APP_PRIVATE_KEY }}
       BUILDCHAIN_GENERATED_WRITE_APP_CLIENT_ID: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_APP_CLIENT_ID }}
       BUILDCHAIN_GENERATED_WRITE_APP_PRIVATE_KEY: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_APP_PRIVATE_KEY }}
       BUILDCHAIN_GENERATED_WRITE_TOKEN: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_TOKEN }}
