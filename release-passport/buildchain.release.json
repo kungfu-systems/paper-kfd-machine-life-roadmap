@@ -59,7 +59,7 @@
     "promotionChannelTreeSha": "",
     "publishToolingSha": "3442cb932b4f7c6637ce830c2da04ffa839cf9ec",
     "releaseStateRef": "refs/heads/buildchain/release-state/0-1-0-alpha-4",
-    "releaseStateSha": "",
+    "releaseStateSha": "913057c5d9f0429e595266eb43bbf52ea7ba2c40",
     "package": {
       "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
       "version": "0.1.0-alpha.4"
