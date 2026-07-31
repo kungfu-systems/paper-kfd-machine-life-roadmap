@@ -41,9 +41,12 @@ dependence into sustained, bounded activity.
 
 Let a subject at admitted state cut \(S_t\) be:
 
+\begin{mlstatebox}
+\mlpaperlabel{Admitted subject state cut}
 \[
 S_t = (I, D_t, F_t, A_t, H_t, O_t, B_t)
 \]
+\end{mlstatebox}
 
 where \(I\) is stable subject identity, \(D_t\) is continuing direction,
 \(F_t\) is the admitted fact root, \(A_t\) is current authority, \(H_t\) is
@@ -55,13 +58,16 @@ was generated.
 
 A successor transition requires an admission function:
 
+\begin{mlstatebox}
+\mlpaperlabel{Governed successor transition}
 \[
 S_{t+1} =
 \begin{cases}
 \operatorname{admit}(S_t, C_t, E_t, W_t), & \text{if qualification succeeds},\\
-S_t, & \text{otherwise},
+S_t, & \text{otherwise}.
 \end{cases}
 \]
+\end{mlstatebox}
 
 where \(C_t\) is a candidate change, \(E_t\) is evidence, and \(W_t\) is the
 warrant authorizing the effect. This makes semantic continuity compatible
