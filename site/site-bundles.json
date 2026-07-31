@@ -3,7 +3,7 @@
   "contract": "kungfu-machine-life-site-bundles-index",
   "source": {
     "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
-    "packageVersion": "0.1.0-alpha.4",
+    "packageVersion": "0.1.0-alpha.5",
     "repository": "git+https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap.git",
     "titleSource": ".buildchain/buildchain.toml",
     "paperEntrypoint": "paper/main.tex",
