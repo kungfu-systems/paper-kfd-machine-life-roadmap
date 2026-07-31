@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-paper-provisioning-authority",
+  "repository": "kungfu-systems/paper-kfd-machine-life-roadmap",
+  "package": {
+    "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+    "registry": "https://registry.npmjs.org/",
+    "bootstrapVersion": "0.0.0-bootstrap.0"
+  },
+  "runtime": {
+    "repository": "kungfu-systems/buildchain",
+    "version": "3.0.2-alpha.4",
+    "ref": "71a75f21159b994241ec7cb2c50f7a150c5d440b",
+    "resolvedSha": "71a75f21159b994241ec7cb2c50f7a150c5d440b"
+  },
+  "workflows": {
+    "build": {
+      "path": ".github/workflows/build.yml",
+      "sourceDigest": "sha256:f11cbb9451bdda966baec4a9e111af529f4be362aff789ecd501a0dff6616599",
+      "reusablePath": ".github/workflows/publication-artifact.yml",
+      "reusableRef": "71a75f21159b994241ec7cb2c50f7a150c5d440b"
+    },
+    "release": {
+      "path": ".github/workflows/paper-release.yml",
+      "sourceDigest": "sha256:a45bbf160c54d8ad7ad61a208d8de913f46ab10c309691ebfe1eb34532c0af95",
+      "reusablePath": ".github/workflows/paper-release-sealed.yml",
+      "reusableRef": "71a75f21159b994241ec7cb2c50f7a150c5d440b"
+    }
+  },
+  "admission": {
+    "contractLockPath": ".buildchain/contract-lock.json",
+    "contractLockDigest": "sha256:70b0a8116f66868cc0e13d3c04e524a0ea0d48b39a696adc3552a91c72f89474",
+    "acceptedRef": "71a75f21159b994241ec7cb2c50f7a150c5d440b",
+    "acceptedSha": "71a75f21159b994241ec7cb2c50f7a150c5d440b"
+  },
+  "trustedPublisher": {
+    "type": "github",
+    "repository": "kungfu-systems/paper-kfd-machine-life-roadmap",
+    "workflow": "paper-release.yml",
+    "environment": ""
+  },
+  "policy": {
+    "repositoryActions": {
+      "defaultWorkflowPermissions": "read",
+      "canApprovePullRequestReviews": false
+    },
+    "generatedWrites": {
+      "preferredAuthority": "github-app",
+      "compatibilityAuthority": "narrow-token",
+      "githubTokenFallback": false,
+      "permissions": [
+        "checks:write",
+        "contents:write",
+        "pull-requests:write"
+      ],
+      "tokenPersistence": "runtime-only"
+    },
+    "release": {
+      "protectedReviewRequired": true,
+      "versionState": "not-required",
+      "identityOnlyPullRequests": false,
+      "manualVersionStateRepairPullRequests": false
+    },
+    "roles": {
+      "actor": "repository-development-role",
+      "pusher": "repository-development-role",
+      "reviewer": "independent-review-role",
+      "generatedWriteAuthority": "github-app-or-narrow-token"
+    },
+    "policyDigest": "sha256:42aafcd084e0de8f569176df4397120e226b4f619b0ff3db804bbb528e1313af"
+  },
+  "authorityDigest": "sha256:1cfb1e181476fc63a86a1423564ff96581dfaa72f1e0652477cb6b3bce715b1c"
+}
