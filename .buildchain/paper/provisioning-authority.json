@@ -10,28 +10,28 @@
   "runtime": {
     "repository": "kungfu-systems/buildchain",
     "version": "3.0.2-alpha.4",
-    "ref": "2cd4e117742ca39fddd43e4244d01581cae75556",
-    "resolvedSha": "2cd4e117742ca39fddd43e4244d01581cae75556"
+    "ref": "4147226415630a0cba6bb3be56f32410fb56c2b1",
+    "resolvedSha": "4147226415630a0cba6bb3be56f32410fb56c2b1"
   },
   "workflows": {
     "build": {
       "path": ".github/workflows/build.yml",
-      "sourceDigest": "sha256:9da4e73e8570d86fab38e449681f82b58526a7790a8fbae34f0944b15315fd6c",
+      "sourceDigest": "sha256:1497893e07abb799c0a9542b07ab3b31e25bfb0d9e7c0d1d51d9dcf4295137ad",
       "reusablePath": ".github/workflows/publication-artifact.yml",
-      "reusableRef": "2cd4e117742ca39fddd43e4244d01581cae75556"
+      "reusableRef": "4147226415630a0cba6bb3be56f32410fb56c2b1"
     },
     "release": {
       "path": ".github/workflows/paper-release.yml",
-      "sourceDigest": "sha256:9d92e7977c953b015930145a6f786b6836104139c13dc5bc555ade99c2f5aeda",
+      "sourceDigest": "sha256:18780f14cb1691db20f01d2d7e0a2eebd28abe7f3ce1b9a77ec36be3d85ed4ea",
       "reusablePath": ".github/workflows/paper-release-sealed.yml",
-      "reusableRef": "2cd4e117742ca39fddd43e4244d01581cae75556"
+      "reusableRef": "4147226415630a0cba6bb3be56f32410fb56c2b1"
     }
   },
   "admission": {
     "contractLockPath": ".buildchain/contract-lock.json",
-    "contractLockDigest": "sha256:adcec8a09d0d7483d3bb98286ee5b16114acf38652b88579a52795548a1609f5",
-    "acceptedRef": "2cd4e117742ca39fddd43e4244d01581cae75556",
-    "acceptedSha": "2cd4e117742ca39fddd43e4244d01581cae75556"
+    "contractLockDigest": "sha256:d71c24bc21ba8a15ceb2b4d0857a0fe2c3ae0ed6eda77d287db5cedcecbc549f",
+    "acceptedRef": "4147226415630a0cba6bb3be56f32410fb56c2b1",
+    "acceptedSha": "4147226415630a0cba6bb3be56f32410fb56c2b1"
   },
   "trustedPublisher": {
     "type": "github",
@@ -69,5 +69,5 @@
     },
     "policyDigest": "sha256:42aafcd084e0de8f569176df4397120e226b4f619b0ff3db804bbb528e1313af"
   },
-  "authorityDigest": "sha256:ee798f012efa040b89463e35fb6f7193822693dbf0d1832425cd2868ec7f459f"
+  "authorityDigest": "sha256:1848bdc967fe164907d1aae03fa61587097a16bee8471bb1a167da93c7c34fb9"
 }
