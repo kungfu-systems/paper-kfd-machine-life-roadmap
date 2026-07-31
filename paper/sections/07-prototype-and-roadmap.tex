@@ -11,7 +11,8 @@ fixed physical or virtual habitat with:
   \item an immutable bootstrap image and recoverable semantic-root backup;
   \item Kungfu as the work and admission kernel;
   \item a pinned compiler and Buildchain environment;
-  \item an admitted registry of KFX organs and external tools;
+  \item a registry of qualified KFX extensions and other admitted executable
+  organs;
   \item access to at least two replaceable agent configurations;
   \item controlled Internet egress and a separate human communication channel;
   \item a production-isolated repository and artifact namespace.
@@ -77,10 +78,35 @@ self-maintenance may support a meaningful bounded-autonomy claim.
 
 \subsection{Evolution stages}
 
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  stage/.style={draw=MLLine,fill=MLPanel,rounded corners=2pt,align=center,
+    text width=2.05cm,minimum height=13mm,inner sep=3pt},
+  advance/.style={-{Stealth[length=4pt]},draw=MLIndigo,line width=0.9pt}
+]
+  \node[stage] (s0) {\textbf{0}\\semantic ecology};
+  \node[stage,right=3mm of s0] (s1) {\textbf{1}\\recurrent subject};
+  \node[stage,right=3mm of s1] (s2) {\textbf{2}\\self-maintaining};
+  \node[stage,right=3mm of s2] (s3) {\textbf{3}\\recursively developing};
+  \node[stage,right=3mm of s3] (s4) {\textbf{4}\\distributed + migratory};
+  \node[stage,right=3mm of s4] (s5) {\textbf{5}\\compact organism};
+  \draw[advance] (s0) -- (s1);
+  \draw[advance] (s1) -- (s2);
+  \draw[advance] (s2) -- (s3);
+  \draw[advance] (s3) -- (s4);
+  \draw[advance] (s4) -- (s5);
+\end{tikzpicture}
+\caption{The evolution path is evidence-gated. Each stage inherits the
+continuity, authority, recovery, and safety obligations of every prior stage.}
+\end{figure}
+
 \paragraph{Stage 0: semantic ecology.}
 Separate mechanisms exist and are individually testable: facts, authority,
-work lineage, history selection, qualified bodies, KFX organs, release
-evidence, scheduled Patrol feedback, and deprecation settlement. Several local
+work lineage, history selection, qualified bodies, qualified KFX extensions
+and other executable organs, release evidence, scheduled Patrol feedback, and
+deprecation settlement. Several local
 edges already form a partial homeostatic loop. This is approximately the
 evidence class examined in Section~6.
 
@@ -94,8 +120,9 @@ updates, cache loss, organ restart, backup verification, and bounded rollback.
 Human attention is exception-driven and measured.
 
 \paragraph{Stage 3: recursively developing organism.}
-The system improves at least one KFX organ and one element of its development
-loop through independent qualification. The admitted changes improve
+The system improves at least one executable organ implemented as a KFX
+extension and one element of its development loop through independent
+qualification. The admitted changes improve
 predeclared measures without weakening safety or evidence gates.
 
 \paragraph{Stage 4: distributed and migratory organism.}

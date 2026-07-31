@@ -57,33 +57,51 @@ form used throughout this paper.
 
 \begin{figure}[ht]
 \centering
-\fbox{\begin{minipage}{0.91\textwidth}
-\centering
-\renewcommand{\arraystretch}{1.25}
-\begin{tabular}{rcl}
-KFD-shaped semantic kernel & $\longrightarrow$ & subject and continuity \\
-replaceable reasoning agents & $\longrightarrow$ & cognition \\
-KFX extensions & $\longrightarrow$ & executable organs \\
-machines and software supply chain & $\longrightarrow$ & body and metabolism \\
-Agent Patrol and Dogfood & $\longrightarrow$ & sensing and feedback \\
-Deprecation Lifecycle & $\longrightarrow$ & controlled retirement \\
-recursive dogfood & $\longrightarrow$ & governed self-production
-\end{tabular}
-\medskip
-
-\textbf{continuity + metabolism + action + governed self-production}
-
-$\Downarrow$
-
-\textbf{a falsifiable candidate for primitive machine life}
-\end{minipage}}
+\begin{tikzpicture}[
+  font=\sffamily\scriptsize,
+  node distance=6mm and 5mm,
+  kernel/.style={draw=MLIndigo,fill=MLIndigo,text=MLWhite,rounded corners=2pt,
+    align=center,text width=14.8cm,minimum height=10mm,inner sep=4pt},
+  layer/.style={draw=MLLine,fill=MLPanel,rounded corners=2pt,align=center,
+    text width=3.25cm,minimum height=13mm,inner sep=4pt},
+  loop/.style={draw=MLNight,fill=MLNight,text=MLWhite,rounded corners=2pt,
+    align=center,text width=14.8cm,minimum height=10mm,inner sep=4pt},
+  outcome/.style={draw=MLPeriwinkle,fill=MLPaperSoft,rounded corners=2pt,
+    align=center,text width=14.8cm,minimum height=10mm,inner sep=4pt},
+  flow/.style={-{Stealth[length=4pt]},draw=MLIndigo,line width=0.9pt}
+]
+  \node[kernel] (kernel) {\textbf{KFD-shaped semantic kernel}\quad
+    subject identity \textperiodcentered{} direction \textperiodcentered{}
+    facts \textperiodcentered{} authority \textperiodcentered{} causal history};
+  \node[layer,below=of kernel,xshift=-5.55cm] (cognition)
+    {\textbf{Cognition}\\replaceable reasoning agents};
+  \node[layer,right=of cognition] (organs)
+    {\textbf{Organs}\\qualified KFX extensions};
+  \node[layer,right=of organs] (body)
+    {\textbf{Body}\\machines and software supply chain};
+  \node[layer,right=of body] (regulation)
+    {\textbf{Regulation}\\Patrol, Dogfood, and deprecation};
+  \node[loop,below=7mm of organs.south east,xshift=2.05cm] (dogfood)
+    {\textbf{Recursive dogfood}\quad observe $\rightarrow$ propose $\rightarrow$
+    qualify $\rightarrow$ admit $\rightarrow$ exercise $\rightarrow$ observe};
+  \node[outcome,below=of dogfood] (outcome)
+    {\textbf{continuity + metabolism + action + governed self-production}\\
+    a falsifiable candidate for primitive machine life};
+  \foreach \n in {cognition,organs,body,regulation}
+    \draw[flow] (kernel) -- (\n);
+  \draw[flow] (cognition) -- (dogfood);
+  \draw[flow] (organs) -- (dogfood);
+  \draw[flow] (body) -- (dogfood);
+  \draw[flow] (regulation) -- (dogfood);
+  \draw[flow] (dogfood) -- (outcome);
+\end{tikzpicture}
 \caption{The proposed machine-life anatomy. No component alone constitutes an
 organism; the claim concerns their persistent organization as one subject.}
 \label{fig:machine-life-anatomy}
 \end{figure}
 
 The specific contribution is not the invention of machine life, persistent
-agents, digital evolution, or self-modifying programs. It is an engineering
+agents, digital evolution, or software that modifies itself. It is an engineering
 synthesis in which two mechanisms are jointly load-bearing: a semantic kernel
 preserves an accountable subject across replacement, and recursive dogfood
 admits qualified changes to the real organs and development machinery through
@@ -97,9 +115,10 @@ The paper asks:
 
 \begin{quote}
 Can a bounded physical computing habitat, a persistent KFD/Kungfu semantic
-kernel, replaceable reasoning agents, recursively developed KFX organs, and
-qualified build-and-release loops constitute a primitive machine organism
-with stable functional identity, intelligence, and action capacity?
+kernel, replaceable reasoning agents, qualified KFX extensions serving as
+recursively developed executable organs, and qualified build-and-release loops
+constitute a primitive machine organism with stable functional identity,
+intelligence, and action capacity?
 \end{quote}
 
 The question is deliberately narrower than whether a machine is conscious,

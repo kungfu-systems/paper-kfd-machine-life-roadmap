@@ -1,40 +1,178 @@
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
-\usepackage[margin=1in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[protrusion=true,expansion=false]{microtype}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{amsmath}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta,calc,positioning}
+\usepackage{kungfu-machine-life}
 
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  citecolor=black,
-  urlcolor=black
-}
-
-\newcommand{\factlabel}{\textbf{Observed fact.}}
-\newcommand{\inferencelabel}{\textbf{Engineering inference.}}
-\newcommand{\hypothesislabel}{\textbf{Testable hypothesis.}}
-\newcommand{\nonclaimlabel}{\textbf{Non-claim.}}
+\newcommand{\factlabel}{\claimbadge{MLEvidence}{OBSERVED FACT}}
+\newcommand{\inferencelabel}{\claimbadge{MLIndigo}{ENGINEERING INFERENCE}}
+\newcommand{\hypothesislabel}{\claimbadge{MLUnknown}{TESTABLE HYPOTHESIS}}
+\newcommand{\nonclaimlabel}{\claimbadge{MLWarn}{NON-CLAIM}}
 
 \title{Semantic Autopoiesis:\\
 An Engineering Roadmap for Machine Life}
-\author{Keren Dong\\Kungfu Origin Technology Limited\\
-\href{mailto:keren.dong@kungfu.link}{keren.dong@kungfu.link}}
+\author{Keren Dong\\Kungfu Origin Technology Limited}
 \date{Alpha 0.1.0-alpha.4 --- July 2026}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\pagecolor{MLNight}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \draw[MLPeriwinkle,opacity=0.22,line width=1.2pt]
+    ([xshift=-0.62in,yshift=-0.85in]current page.north east)
+    .. controls ([xshift=-3.3in,yshift=-2.0in]current page.north east)
+    and ([xshift=-1.5in,yshift=2.1in]current page.south east)
+    .. ([xshift=-3.9in,yshift=0.72in]current page.south east);
+  \draw[MLIndigo,opacity=0.22,line width=28pt]
+    ([xshift=-0.3in,yshift=-0.72in]current page.north east) --
+    ([xshift=-2.9in,yshift=0.55in]current page.south east);
+  \draw[MLPeriwinkle,opacity=0.12,line width=0.8pt]
+    ([xshift=-2.0in,yshift=-0.62in]current page.north east) circle [radius=1.58in];
+  \draw[MLPeriwinkle,opacity=0.09,line width=0.8pt]
+    ([xshift=-2.0in,yshift=-0.62in]current page.north east) circle [radius=2.08in];
+\end{tikzpicture}
 
-\begin{abstract}
+\mleyebrow{Machine Life \textperiodcentered{} Research Roadmap \textperiodcentered{} July 2026}\par
+\vspace{0.56in}
+
+{\rmfamily\bfseries\fontsize{36}{39}\selectfont\color{MLWhite}
+Semantic\par
+Autopoiesis\par}
+\vspace{0.13in}
+{\sffamily\fontsize{15}{19}\selectfont\color{MLPeriwinkle}
+An Engineering Roadmap for Machine Life\par}
+
+\vspace{0.25in}
+{\color{MLIndigo}\rule{0.98in}{3pt}}\par
+\vspace{0.23in}
+
+\begin{tikzpicture}[
+  node distance=0.13in,
+  lifenode/.style={rounded corners=2pt,draw=MLPeriwinkle!45,fill=MLNight,
+    text=MLWhite,minimum width=1.22in,minimum height=0.44in,
+    align=center,font=\sffamily\bfseries\scriptsize},
+  lifearrow/.style={-{Stealth[length=4pt]},draw=MLPeriwinkle,line width=1pt}
+]
+  \node[lifenode] (subject) {Subject};
+  \node[lifenode,right=of subject] (agent) {Agent};
+  \node[lifenode,right=of agent] (organ) {Executable organ};
+  \node[lifenode,right=of organ] (habitat) {Machine habitat};
+  \draw[lifearrow] (subject) -- (agent);
+  \draw[lifearrow] (agent) -- (organ);
+  \draw[lifearrow] (organ) -- (habitat);
+  \node[font=\sffamily\scriptsize,text=MLPeriwinkle,below=0.07in of agent]
+    {replaceable cognition};
+  \node[font=\sffamily\scriptsize,text=MLPeriwinkle,below=0.07in of organ]
+    {qualified KFX extension};
+  \node[font=\sffamily\scriptsize,text=MLPeriwinkle,below=0.07in of habitat]
+    {replaceable body};
+\end{tikzpicture}
+
+\vspace{0.34in}
+{\sffamily\bfseries\fontsize{12}{15.5}\selectfont\color{MLWhite}
+A bounded machine organization becomes a candidate subject when it can
+preserve continuity, metabolize technical resources, act, and govern the
+production of its own successor organization.\par}
+
+\vspace{0.23in}
+\begin{minipage}[t]{0.315\textwidth}
+  \begin{mldarkcard}
+    {\sffamily\bfseries\scriptsize\color{MLPeriwinkle}FUNCTIONAL}\par
+    {\scriptsize\color{MLWhite}Defined through observable engineering
+    properties rather than resemblance to a human body.}
+  \end{mldarkcard}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.315\textwidth}
+  \begin{mldarkcard}
+    {\sffamily\bfseries\scriptsize\color{MLPeriwinkle}FALSIFIABLE}\par
+    {\scriptsize\color{MLWhite}Bound to continuity, maintenance, recovery,
+    and recursive-development survival trials.}
+  \end{mldarkcard}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.315\textwidth}
+  \begin{mldarkcard}
+    {\sffamily\bfseries\scriptsize\color{MLPeriwinkle}BOUNDED}\par
+    {\scriptsize\color{MLWhite}Authority remains explicit and cannot be
+    enlarged by the proposing cognition.}
+  \end{mldarkcard}
+\end{minipage}
+
+\vfill
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+  {\sffamily\color{MLWhite}Keren Dong\par
+   \footnotesize Kungfu Origin Technology Limited} &
+  {\sffamily\footnotesize\color{MLPeriwinkle}
+   \href{https://kungfu.tech}{https://kungfu.tech}}
+\end{tabularx}
+\end{titlepage}
+\pagecolor{MLPaper}
+
+\thispagestyle{fancy}
+\mlpaperlabel{Reader orientation}\par
+\vspace{0.1in}
+{\rmfamily\bfseries\fontsize{27}{30}\selectfont\color{MLInk}
+What survives when the Agent, the organ, and the machine are replaced?\par}
+\vspace{0.15in}
+
+\begin{mldarkcard}
+  {\sffamily\bfseries\scriptsize\color{MLPeriwinkle}FROM NOW TO FUTURE}\par
+  {\rmfamily\bfseries\fontsize{16}{19}\selectfont\color{MLWhite}
+  The Kungfu White Paper asks how Work survives a chat and a replaceable Agent.
+  Machine Life asks whether that continuity can become the kernel of a
+  persistent, self-maintaining subject.}\par
+  \vspace{0.08in}
+  {\small\color{MLPeriwinkle}
+  \href{https://kungfu.tech/whitepaper/kungfu-real-world-agent-work/}{Read the White Paper}
+  \quad\textperiodcentered\quad
+  \href{https://kfd.libkungfu.dev/foundation/}{Explore the KFD foundation}}
+\end{mldarkcard}
+
+\vspace{0.07in}
+\begin{minipage}[t]{0.485\textwidth}
+  \mlfrontcard{This paper proposes}{A functional machine proto-organism built
+  from a persistent semantic kernel, replaceable cognition, executable organs,
+  ordinary computing infrastructure, and governed self-production.}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+  \mlfrontcard{This paper does not claim}{Biological equivalence, sentience,
+  phenomenal consciousness, intrinsic desire, or unrestricted autonomy.}
+\end{minipage}
+
+\vspace{0.06in}
+\mlpaperlabel{Two jointly necessary mechanisms}\par
+\vspace{0.06in}
+\begin{minipage}[t]{0.485\textwidth}
+  \mlmechanism{Semantic kernel}{Preserves subject identity, direction,
+  admitted facts, bounded authority, causal history, and succession rules
+  across replacement.}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.485\textwidth}
+  \mlmechanism{Recursive dogfood}{Lets the current organization develop,
+  qualify, admit, and exercise changes to the real mechanisms of its own
+  future work.}
+\end{minipage}
+
+\vspace{0.07in}
+\begin{mldarkcard}
+  {\sffamily\bfseries\small\color{MLPeriwinkle}Read critically with an Agent}\par
+  \begin{mlagentprompt}
+Help me evaluate this paper rather than accept its framing. Separate observed
+facts, engineering inferences, testable hypotheses, and non-claims. Explain
+why the semantic kernel and recursive dogfood are jointly necessary, identify
+the missing composition proof, and describe what would falsify the machine-life
+thesis. Do not infer consciousness or unrestricted autonomy.
+  \end{mlagentprompt}
+\end{mldarkcard}
+
+\clearpage
+\mlpaperlabel{Abstract}\par
+\vspace{0.08in}
+\begin{mlabstractbox}
+
 Machine life need not begin when a model becomes generally intelligent or a
 robot becomes human-shaped. This paper examines a different threshold: a
 bounded machine organization that preserves a continuing subject, metabolizes
@@ -52,8 +190,9 @@ across process, model, organ, and machine replacement. Recursive dogfood lets
 that subject use its current engineering organization to develop, qualify,
 admit, and exercise changes to the mechanisms of its own future work. KFD and
 Kungfu provide a concrete implementation path: replaceable agents supply
-cognition, KFX extensions act as organs, and Buildchain-like qualification
-turns candidate self-modifications into bounded successor states.
+cognition, qualified KFX extensions can serve as executable organs, and
+Buildchain-like qualification turns candidate self-modifications into bounded
+successor states.
 
 A dated Kungfu snapshot contains substantial parts of this loop, including
 durable work identity, qualified executable bodies, verified history
@@ -69,20 +208,47 @@ specific: ordinary software engineering materials may already be sufficient
 to construct and experimentally study a primitive form of machine life. It is
 not a claim of biological equivalence, sentience, phenomenal consciousness, or
 unrestricted autonomy.
-\end{abstract}
+\end{mlabstractbox}
+
+\vspace{0.12in}
+\begin{mlsoftcard}[colback=MLPaperSoft]
+  {\sffamily\bfseries\small\color{MLIndigo}CLAIM DISCIPLINE}\par
+  \vspace{0.08in}
+  \begin{minipage}[t]{0.485\linewidth}
+    \mlclaimkey{MLEvidence}{OBSERVED FACT}{Directly inspectable evidence.}\par
+    \vspace{0.11in}
+    \mlclaimkey{MLUnknown}{TESTABLE HYPOTHESIS}{An experiment with a failure condition.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.485\linewidth}
+    \mlclaimkey{MLIndigo}{ENGINEERING INFERENCE}{A composed engineering judgment.}\par
+    \vspace{0.11in}
+    \mlclaimkey{MLWarn}{NON-CLAIM}{A boundary the paper refuses to cross.}
+  \end{minipage}
+\end{mlsoftcard}
+
+\clearpage
+\mlpartband{Part I \textperiodcentered{} Threshold}{What would count as machine life?}
 
 \input{sections/01-introduction}
 \input{sections/02-life-as-an-engineering-property}
+\clearpage
+\mlpartband{Part II \textperiodcentered{} Organization}{How a continuing subject is assembled}
 \input{sections/03-semantic-kernel}
 \input{sections/04-recursive-dogfood}
 \input{sections/05-material-anatomy}
+\clearpage
+\mlpartband{Part III \textperiodcentered{} Evidence and experiment}{What exists, and what must still be proved}
 \input{sections/06-kungfu-evidence}
 \input{sections/07-prototype-and-roadmap}
 \input{sections/08-evaluation-and-safety}
+\clearpage
+\mlpartband{Part IV \textperiodcentered{} Boundaries}{Context, unresolved questions, and falsifiable conclusions}
 \input{sections/09-related-work}
 \input{sections/10-discussion}
 \input{sections/11-conclusion}
 
+\clearpage
 \bibliographystyle{plain}
 \bibliography{references}
 
