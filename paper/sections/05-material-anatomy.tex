@@ -9,18 +9,27 @@ The proposed architecture separates five functional layers:
 \small
 \begin{tabularx}{\textwidth}{@{}p{0.20\textwidth}p{0.28\textwidth}X@{}}
 \toprule
-\textbf{Layer} & \textbf{Machine substrate} & \textbf{Functional role} \\
+\rowcolor{MLIndigo}
+\textcolor{MLWhite}{\textbf{Layer}} &
+\textcolor{MLWhite}{\textbf{Machine substrate}} &
+\textcolor{MLWhite}{\textbf{Functional role}} \\
 \midrule
+\rowcolor{MLPanel}
 Semantic kernel & KFD decisions, Kungfu state, facts, cuts, warrants &
 Preserve identity, direction, memory eligibility, authority, and admission \\
+\rowcolor{MLPaperSoft}
 Cognition & Replaceable local or remote agents &
 Interpret state, reason, plan, communicate, and propose work \\
-Organs & KFX packages, CLIs, adapters, services, and workflows &
+\rowcolor{MLPanel}
+Executable organs & Qualified KFX extensions; admitted CLIs, adapters,
+services, and workflows &
 Perform specialized perception, transformation, construction, and action \\
+\rowcolor{MLPaperSoft}
 Homeostatic regulation & Agent Patrol, Dogfood Queue, qualification gates,
 and Deprecation Lifecycle &
 Detect deviation, route repair, reject unfit successors, and retire obsolete
 surfaces \\
+\rowcolor{MLPanel}
 Body and metabolism & Servers, OS kernels, compilers, Buildchain, caches,
 storage, networks, credentials, power &
 Supply persistence, resources, translation, circulation, protection, and
@@ -31,12 +40,15 @@ contact with the environment \\
 \label{tab:anatomy}
 \end{table}
 
-KFX is especially important because it lets capability become an inspectable,
-versioned organ rather than remain an ephemeral skill inside a model. An organ
-can declare inputs, outputs, required authority, dependencies, and
-qualification evidence. It can be replaced without replacing the subject.
-Several organs can form a subsystem, and distinct subjects can use the same
-organ artifact under different warrants.
+KFX is especially important because it can make a capability inspectable,
+versioned, qualified, and replaceable rather than leave it as an ephemeral
+skill inside a model. A qualified KFX extension can therefore serve as an
+\emph{executable organ}: a capability artifact that acts without owning the
+subject's identity or authority. Such an organ can declare inputs, outputs,
+required authority, dependencies, and qualification evidence. Its role can be
+revoked or replaced without replacing the subject. Several organs can form a
+subsystem, and distinct subjects can use the same organ artifact under
+different warrants.
 
 \subsection{The habitat boundary}
 
@@ -97,8 +109,8 @@ losing its semantic roots may retain matter but not the same subject.
 \subsection{Personality and models}
 
 Different founding Initiatives, risk tolerances, preferred evidence, resource
-budgets, interaction styles, and KFX organ sets can yield distinct machine
-types. Over time, admitted experience can produce stable behavioral
+budgets, interaction styles, and sets of admitted executable organs can yield
+distinct machine types. Over time, admitted experience can produce stable behavioral
 differences that humans reasonably experience as personality. This is a
 functional and relational use of the term.
 

@@ -11,8 +11,12 @@ The relevant results are summarized in Table~\ref{tab:evidence}.
 \footnotesize
 \begin{tabularx}{\textwidth}{@{}p{0.25\textwidth}p{0.20\textwidth}X@{}}
 \toprule
-\textbf{Mechanism} & \textbf{Observed state} & \textbf{Relevance and boundary} \\
+\rowcolor{MLIndigo}
+\textcolor{MLWhite}{\textbf{Mechanism}} &
+\textcolor{MLWhite}{\textbf{Observed state}} &
+\textcolor{MLWhite}{\textbf{Relevance and boundary}} \\
 \midrule
+\rowcolor{MLPanel}
 Native delivery loop & Merged PR \#1814 &
 Initiative/Assignment work is qualified through native Project Cut evidence;
 this supports work lineage, not organism-level survival \cite{kungfu1814}. \\
@@ -85,20 +89,19 @@ unstructured deletion.
 Figure~\ref{fig:kungfu-homeostasis} distinguishes implemented local paths from
 the compositional edges that still require an organism-level survival trial.
 
-\clearpage
-\begin{figure}[p]
+\begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
   font=\scriptsize,
   node distance=8mm and 7mm,
-  box/.style={draw, rounded corners=2pt, align=center, minimum height=9mm,
+  box/.style={draw=MLLine, rounded corners=2pt, align=center, minimum height=9mm,
     text width=2.55cm, inner sep=4pt},
-  sense/.style={box, fill=black!4},
-  work/.style={box, fill=black!9},
-  body/.style={box, fill=black!14},
-  flow/.style={-{Latex[length=2mm]}, thick},
-  compose/.style={-{Latex[length=2mm]}, thick, dashed},
-  boundary/.style={draw, dashed, rounded corners=2pt, align=center,
+  sense/.style={box, fill=MLEvidence!8, draw=MLEvidence!45},
+  work/.style={box, fill=MLIndigo!10, draw=MLIndigo!50},
+  body/.style={box, fill=MLPaperSoft, draw=MLUnknown!50},
+  flow/.style={-{Latex[length=2mm]}, thick, draw=MLEvidence},
+  compose/.style={-{Latex[length=2mm]}, thick, dashed, draw=MLIndigo},
+  boundary/.style={draw=MLUnknown, dashed, rounded corners=2pt, align=center,
     inner sep=4pt}
 ]
   \coordinate (topmid) at (5.15,0);
@@ -111,7 +114,8 @@ the compositional edges that still require an organism-level survival trial.
   \node[work, right=of dogfood] (selection) {Work selection\\history + qualified core};
   \node[work, right=of selection] (agent) {Replaceable agent\\reason + act};
 
-  \node[body, below=15mm of patrol] (running) {Admitted KFX organs\\and system state};
+  \node[body, below=15mm of patrol] (running)
+    {Executable organs\\qualified KFX extensions};
   \node[body, below=15mm of selection] (qualification) {Buildchain gates\\and admission};
   \node[body, below=12mm of agent] (candidate) {Candidate KFX\\or system change};
   \node[body, below=11mm of running] (deprecation) {Deprecation Lifecycle\\retire + settle};
@@ -125,9 +129,10 @@ the compositional edges that still require an organism-level survival trial.
   \draw[flow] (running) -- (patrol);
   \draw[flow] (running) -- (deprecation);
 
-  \node[draw, rounded corners=2pt, align=center, text width=14.2cm,
-    inner sep=4pt, below=18mm of deprecation, xshift=5.15cm] (kernel)
-    {KFD / Kungfu semantic kernel: subject identity $\mid$ Initiative $\mid$
+  \node[draw=MLIndigo,fill=MLIndigo,text=MLWhite,rounded corners=2pt,
+    align=center,text width=14.2cm,inner sep=4pt,
+    below=18mm of deprecation,xshift=5.15cm] (kernel)
+    {\textbf{KFD / Kungfu semantic kernel:} subject identity $\mid$ Initiative $\mid$
     facts $\mid$ authority $\mid$ causal history $\mid$ admission\\
     \emph{governs identity, work selection, qualification, and succession}};
 \end{tikzpicture}
@@ -139,7 +144,6 @@ kernel governing the loop. The deprecation branch expresses controlled
 retirement; due work re-enters through the Dogfood and work-control path.}
 \label{fig:kungfu-homeostasis}
 \end{figure}
-\clearpage
 
 \factlabel\ The scheduled Patrol, bounded Finding capture, deprecation audit,
 and protected release enforcement are implemented mechanisms, not proposed
@@ -188,10 +192,13 @@ history.
 \subsection{Why KFX matters}
 
 KFX turns capabilities into separately versioned, qualified, and replaceable
-artifacts. This supports an organ model in three ways. First, the subject can
-gain a capability without embedding all behavior in its semantic kernel.
-Second, an organ can be assessed and revoked independently. Third, an organ can
-be reused across subjects without transferring subject identity.
+artifacts. A qualified KFX extension can serve as an executable organ, but KFX
+and organ are not synonyms: KFX names an implementation substrate, while organ
+names a governed role in the continuing subject. This supports an organ model
+in three ways. First, the subject can gain a capability without embedding all
+behavior in its semantic kernel. Second, an organ can be assessed and revoked
+independently. Third, an organ can be reused across subjects without
+transferring subject identity.
 
 An identity-neutral terminal is especially instructive: it can expose
 perception and action while refusing to become the authority or identity of

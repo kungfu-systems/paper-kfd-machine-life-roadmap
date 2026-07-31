@@ -5,17 +5,18 @@ This repository tracks the LaTeX source for:
 > **Semantic Autopoiesis: An Engineering Roadmap for Machine Life**
 
 The paper asks whether a persistent semantic kernel, replaceable reasoning
-agents, recursively developed executable organs, and ordinary computing
-infrastructure can form a low-level machine organism. It develops a functional
-and falsifiable engineering proposal; it does **not** claim biological life,
-sentience, phenomenal consciousness, or completed autonomy.
+agents, qualified KFX extensions serving as recursively developed executable
+organs, and ordinary computing infrastructure can form a low-level machine
+organism. It develops a functional and falsifiable engineering proposal; it
+does **not** claim biological life, sentience, phenomenal consciousness, or
+completed autonomy.
 
 The proposed anatomy is:
 
 ```text
 KFD / Kungfu semantics  -> continuity and bounded authority
 Agent                   -> replaceable cognition
-KFX                     -> executable organs
+qualified KFX extension -> may serve as an executable organ
 servers and toolchains  -> material body and metabolism
 recursive dogfood       -> governed self-modification
 ```
