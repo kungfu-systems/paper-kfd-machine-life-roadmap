@@ -10,6 +10,15 @@
   },
   "scripts": {
     "check:site-bundles": "node scripts/check-site-bundles.mjs",
-    "update:site-bundles": "node scripts/update-site-bundles.mjs"
-  }
+    "update:site-bundles": "node scripts/update-site-bundles.mjs",
+    "buildchain:paper": "buildchain paper",
+    "paper:preflight": "buildchain paper preflight --json",
+    "paper:work:start": "buildchain paper work start",
+    "paper:work:submit": "buildchain paper work submit",
+    "paper:status": "buildchain paper status --json"
+  },
+  "devDependencies": {
+    "@kungfu-tech/buildchain": "3.0.3-alpha.3"
+  },
+  "packageManager": "pnpm@11.7.0"
 }
