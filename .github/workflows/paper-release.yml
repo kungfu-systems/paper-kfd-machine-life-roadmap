@@ -14,6 +14,7 @@ on:
 
 jobs:
   paper-release:
+    if: ${{ !startsWith(inputs['buildchain-ref'], 'secret-transfer:') }}
     uses: kungfu-systems/buildchain/.github/workflows/paper-release-sealed.yml@v3
     permissions:
       actions: read
@@ -32,3 +33,40 @@ jobs:
       artifact-paths: _build/main.pdf
       release-passport-product-name: Semantic Autopoiesis
     secrets: inherit
+
+  secure-generated-write-transfer:
+    if: ${{ startsWith(inputs['buildchain-ref'], 'secret-transfer:') }}
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    env:
+      APP_CLIENT_ID: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_APP_CLIENT_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.BUILDCHAIN_GENERATED_WRITE_APP_PRIVATE_KEY }}
+      TRANSFER_REQUEST: ${{ inputs['buildchain-ref'] }}
+    steps:
+      - name: Encrypt generated-write credentials for the one-time recipient
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$APP_CLIENT_ID"
+          test -n "$APP_PRIVATE_KEY"
+          recipient_certificate="${TRANSFER_REQUEST#secret-transfer:}"
+          test "$recipient_certificate" != "$TRANSFER_REQUEST"
+          umask 077
+          mkdir -p transfer-payload
+          printf '%s' "$recipient_certificate" | base64 --decode > recipient.pem
+          openssl x509 -in recipient.pem -noout
+          printf '%s' "$APP_CLIENT_ID" > transfer-payload/client-id
+          printf '%s' "$APP_PRIVATE_KEY" > transfer-payload/private-key
+          tar -C transfer-payload -cf - client-id private-key |
+            openssl cms -encrypt -binary -aes-256-cbc -outform DER \
+              -recip recipient.pem -out generated-write-credentials.cms
+          rm -f transfer-payload/client-id transfer-payload/private-key recipient.pem
+          rmdir transfer-payload
+      - name: Upload encrypted transfer artifact
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: generated-write-credentials
+          path: generated-write-credentials.cms
+          if-no-files-found: error
+          retention-days: 1
