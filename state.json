@@ -16,14 +16,27 @@
   "state_ref": "buildchain/release-state/0-1-0-alpha-6",
   "state_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-state/v0.1.0-alpha.6.json",
   "evidence_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-evidence/v0.1.0-alpha.6/evidence.json",
-  "state": "publishing",
-  "previous_state": "sealed",
+  "state": "published",
+  "previous_state": "publishing",
   "actor": "kungfu-origin",
   "run_id": "30677397568",
   "superseded_by": "",
   "failure": "",
-  "artifacts": [],
-  "evidence": [],
+  "artifacts": [
+    {
+      "group": "node",
+      "kind": "npm",
+      "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "ref": "0.1.0-alpha.6",
+      "digest": "sha512-W6Aq6+Py2Pt0zA6wl5A3rMg3BGwJEWUoUsRftRGXdodf4ywgx3JkkLoncz6dIg9mKs2m8uVqlQ9s4OhYt3Cnww==",
+      "role": "",
+      "required": true
+    }
+  ],
+  "evidence": [
+    ".buildchain/release-evidence/v0.1.0-alpha.6/evidence.json",
+    ".buildchain/release-evidence/v0.1.0-alpha.6/dist-tag-evidence.json"
+  ],
   "sealed_bundle": {
     "schemaVersion": 1,
     "contract": "kungfu-buildchain-publication-sealed-bundle",
@@ -345,9 +358,15 @@
     "durablePath": "sealed-bundle/sha256/eb4363102409dea0d18d37e05924adac1bd5668040243effe29638128abc982f",
     "resumeCommand": "buildchain paper resume --version \"0.1.0-alpha.6\" --state-ref \"refs/heads/buildchain/release-state/0-1-0-alpha-6\""
   },
-  "publication_state": "sealed",
-  "milestones": {},
+  "publication_state": "package-published",
+  "milestones": {
+    "package_published": {
+      "status": "complete",
+      "artifactCount": 1,
+      "sealedBundleRoot": "sha256:eb4363102409dea0d18d37e05924adac1bd5668040243effe29638128abc982f"
+    }
+  },
   "resume_command": "buildchain paper resume --version \"0.1.0-alpha.6\" --state-ref \"refs/heads/buildchain/release-state/0-1-0-alpha-6\"",
   "created_at": "2026-08-01T01:14:30.937Z",
-  "updated_at": "2026-08-01T01:14:41.683Z"
+  "updated_at": "2026-08-01T01:14:49.173Z"
 }
