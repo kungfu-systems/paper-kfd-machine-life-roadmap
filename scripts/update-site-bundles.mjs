@@ -147,13 +147,13 @@ export const buildSiteBundles = () => {
     source,
     routes: {
       canonicalHost: "kungfu.tech",
-      canonicalPath: "/whitepaper/kfd-machine-life-roadmap",
-      canonicalUrl: "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap",
+      canonicalPath: "/whitepaper/kungfu-machine-life",
+      canonicalUrl: "https://kungfu.tech/whitepaper/kungfu-machine-life",
       indexPath: "/whitepaper",
       indexUrl: "https://kungfu.tech/whitepaper",
       pdfPath: "/whitepaper/kungfu-machine-life.pdf",
       pdfUrl: "https://kungfu.tech/whitepaper/kungfu-machine-life.pdf",
-      pdfAliases: ["/whitepaper/kfd-machine-life-roadmap.pdf"],
+      pdfAliases: [],
       evidenceUrl: "https://papers.libkungfu.dev/kfd-machine-life-roadmap/",
     },
     hero: {
@@ -163,7 +163,7 @@ export const buildSiteBundles = () => {
       stance: "Treat machine life as a bounded, falsifiable engineering program built from semantic continuity, replaceable cognition, executable organs, and governed self-production.",
       primaryCta: {
         label: "Read Machine Life",
-        href: "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap",
+        href: "https://kungfu.tech/whitepaper/kungfu-machine-life",
       },
       secondaryCta: {
         label: "Inspect publication evidence",
