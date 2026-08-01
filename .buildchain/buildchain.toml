@@ -7,7 +7,7 @@ name = "paper-kfd-machine-life-roadmap"
 [publication]
 kind = "paper"
 title = "Semantic Autopoiesis: An Engineering Roadmap for Machine Life"
-version = "0.1.0-alpha.8"
+version = "0.1.0-alpha.9"
 abstract = "A functional and falsifiable engineering roadmap for a low-level machine organism built from semantic continuity, replaceable agents, executable organs, ordinary computing infrastructure, and governed self-modification."
 authors = ["Keren Dong"]
 primary_artifact = "_build/main.pdf"
