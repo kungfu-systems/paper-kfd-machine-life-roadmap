@@ -16,10 +16,10 @@
   "state_ref": "buildchain/release-state/0-1-0-alpha-6",
   "state_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-state/v0.1.0-alpha.6.json",
   "evidence_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-evidence/v0.1.0-alpha.6/evidence.json",
-  "state": "finalizing",
-  "previous_state": "published",
-  "actor": "kungfu-origin",
-  "run_id": "30677397568",
+  "state": "complete",
+  "previous_state": "finalizing",
+  "actor": "dongkeren",
+  "run_id": "30682241224",
   "superseded_by": "",
   "failure": "",
   "artifacts": [
@@ -368,5 +368,5 @@
   },
   "resume_command": "buildchain paper resume --version \"0.1.0-alpha.6\" --state-ref \"refs/heads/buildchain/release-state/0-1-0-alpha-6\"",
   "created_at": "2026-08-01T01:14:30.937Z",
-  "updated_at": "2026-08-01T03:35:56.370Z"
+  "updated_at": "2026-08-01T03:36:02.815Z"
 }
