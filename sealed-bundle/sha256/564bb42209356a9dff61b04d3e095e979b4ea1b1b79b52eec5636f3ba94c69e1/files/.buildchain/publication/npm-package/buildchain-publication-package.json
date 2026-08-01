@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-publication-npm-package",
+  "package": {
+    "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+    "version": "0.1.0-alpha.10",
+    "distTag": "alpha",
+    "auth": "trusted-publishing"
+  },
+  "project": {
+    "name": "paper-kfd-machine-life-roadmap",
+    "type": "publication-artifact"
+  },
+  "publication": {
+    "kind": "paper",
+    "title": "Semantic Autopoiesis: An Engineering Roadmap for Machine Life",
+    "version": "0.1.0-alpha.10",
+    "primaryArtifact": "_build/main.pdf",
+    "manifestPath": ".buildchain/publication/publication-artifact.json",
+    "passportPath": ".buildchain/publication/publication-artifact-passport.json",
+    "registryPath": ".buildchain/publication/publication-registry.json",
+    "registryHydrationPath": ".buildchain/publication/registry-hydration.json",
+    "sourceBundlePath": ".buildchain/publication/source.tar.gz",
+    "artifactPaths": [
+      "_build/main.pdf",
+      "_build/main.pdf"
+    ],
+    "metadataPaths": [
+      "README.md",
+      "docs/MAP.md",
+      "site/brand-site.json",
+      "site/site-bundles.json"
+    ],
+    "siteConsumers": [
+      "kungfu.tech",
+      "papers.libkungfu.dev"
+    ]
+  },
+  "outputDir": ".buildchain/publication/npm-package",
+  "files": [
+    {
+      "path": "_build/main.pdf",
+      "bytes": 406200,
+      "sha256": "3d9ec7be6b8cd106ab553ea5fe92e924bda1e4ad9246b1539500b7e0354a5bda"
+    },
+    {
+      "path": "_build/main.pdf",
+      "bytes": 406200,
+      "sha256": "3d9ec7be6b8cd106ab553ea5fe92e924bda1e4ad9246b1539500b7e0354a5bda"
+    },
+    {
+      "path": ".buildchain/publication/publication-artifact-passport.json",
+      "bytes": 8635,
+      "sha256": "6b503909ce6bf6c5698e14c7674bb16f61de4c1e1a3f2862e94004676d0646e2"
+    },
+    {
+      "path": ".buildchain/publication/publication-artifact.json",
+      "bytes": 9213,
+      "sha256": "dca2b0176238e89826f3df3cb022b56f2aab1650e83f2e8a53be7be69ef90dd1"
+    },
+    {
+      "path": ".buildchain/publication/publication-registry.json",
+      "bytes": 36090,
+      "sha256": "4e49915faa9d9c3ce54a288000c1bc6da587b4662144ddf0e5779b8a769ef45b"
+    },
+    {
+      "path": ".buildchain/publication/registry-hydration.json",
+      "bytes": 4135,
+      "sha256": "c08f46c76851a5d3527fbd48843b2fbc3ca16b862edf86a2de48ba79eaa34204"
+    },
+    {
+      "path": ".buildchain/publication/source.tar.gz",
+      "bytes": 59182,
+      "sha256": "0e47c6ed03a68d5d7465273127c32bdd3333ff2da58eb8cd06f2f677eca413ec"
+    },
+    {
+      "path": "docs/MAP.md",
+      "bytes": 1720,
+      "sha256": "bd3779b4904093854b4469bb9e82a83347d2b968a7bbcbd008409157388e2e3c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1755,
+      "sha256": "01c374dd8dd04bce7cf5074a86b424c33884c6a89e1cced9455f2b5e6425f445"
+    },
+    {
+      "path": "README.md",
+      "bytes": 352,
+      "sha256": "2df2056d7e8a3758fb367433f64fb51b31f7f6d8b6f57321e0c0c642be2d6d61"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3724,
+      "sha256": "5b9f8a2638af059fae34fe9be50e3bf5201a06e07822cca8c0ea8dfc3ae1b72f"
+    },
+    {
+      "path": "site/brand-site.json",
+      "bytes": 65865,
+      "sha256": "4d8a9799c55c4988cf364098aa26ecb47c48bb6ed09c8f394a72a260e02d809c"
+    },
+    {
+      "path": "site/site-bundles.json",
+      "bytes": 1309,
+      "sha256": "4575f13e872375664cc44a6c279f2c0c66a18414c85fab680e390ae1fbf63761"
+    }
+  ]
+}

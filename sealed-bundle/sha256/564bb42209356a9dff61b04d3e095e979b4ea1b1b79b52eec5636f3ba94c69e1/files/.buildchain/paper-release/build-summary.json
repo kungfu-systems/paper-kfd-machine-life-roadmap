@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-paper-release-build-summary",
+  "repository": "kungfu-systems/paper-kfd-machine-life-roadmap",
+  "sourceSha": "587ee7d50c483f871802cd90a2d8795bb1a3fe08",
+  "package": {
+    "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+    "version": "0.1.0-alpha.10"
+  },
+  "reproducibility": {
+    "receiptPath": ".buildchain/publication/reproducibility-receipt.json",
+    "receiptDigest": "sha256:2069a16ae05b64265bc713424e3ddc5dce4c9a9e335e9f193eea8d79fb6a4c7c",
+    "npmIntegrity": "sha512-+PtmJmjwGjSP5rH60Ix3rNMX3XjhnRNUog0f8YoRcmT0SrmpX/BFdupmQC2lRg3C9u0ISTSxwlZw6UKzjm7PMw==",
+    "npmSha256": "847c30db9a43512c23527e419c684373f8176e4172b4824fcf6f9a69aa2b7fed"
+  },
+  "publication": {
+    "manifestPath": ".buildchain/publication/publication-artifact.json",
+    "passportPath": ".buildchain/publication/publication-artifact-passport.json",
+    "registryPath": ".buildchain/publication/publication-registry.json",
+    "primaryArtifact": "_build/main.pdf"
+  },
+  "platforms": [
+    {
+      "id": "paper",
+      "manifestPath": ".buildchain/publication/publication-artifact.json"
+    }
+  ]
+}

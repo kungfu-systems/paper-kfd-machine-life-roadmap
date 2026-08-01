@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-publication-registry-hydration",
+  "status": "hydrated",
+  "authentication": "npm-registry-https-plus-package-integrity",
+  "registry": "https://registry.npmjs.org/",
+  "packageName": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+  "currentVersion": "0.1.0-alpha.10",
+  "inputDir": ".buildchain/publication/registry-inputs",
+  "sources": [
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.0.0-bootstrap.0",
+      "integrity": "sha512-ZJAkIp/WCQJShnJRfTtQb8xltXXEuiegi34gWpKXzC+5oHZqHNsPDaS2rFzqgNWeOXBkpqgPTBY0cyZsOydnpQ==",
+      "status": "registry-not-present"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.0",
+      "integrity": "sha512-68bkWYenOTL6yAlaIcV4UiTlXcrI+4QXFV/z7PkhyGAuzT6DchR3nWJ3zL+UX4OUc5OdPpHUx5myz38snK621Q==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.0.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.1",
+      "integrity": "sha512-75lwk/2nIHN31R9ka7W4ngCTMrAm5Gu2nRNITUMALkNWrlemT3dyLklmUDZZvDJMuxMuEj462BUm4YUfd17qZQ==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.1.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.2",
+      "integrity": "sha512-Tibd4XM4Xq/ZyO/lD77nLz2Rw/Z9eUkj0IoIrnb0ayvjG9XuGt+Psb97XbvaMBVByysvYyEVci3sIqOxiSV8bg==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.2.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.3",
+      "integrity": "sha512-OoxxfCj5X473luWuUfZNshg24N0n2O8DYlG/XAhouILDCZYGVkMiSYJZHGBQzpupAPh0yF0qCGFIw8W/QgETig==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.3.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.4",
+      "integrity": "sha512-f3ORf1bDH9ovuTbX69DoxYYd2+3ez17VJFW0NtZNVbuZY1SjQ1mYPKv0j9Me+Qd87KlmIkJes+790OEEHlKz7g==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.4.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.5",
+      "integrity": "sha512-+8Hf8cdPHwT725IUHmgBfW/p5KMND7IvW5auDCCsz9lc/seik9dgHEj7A2BXGW+iDYZh4PQw6D0zkbKEEca8UQ==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.5.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.6",
+      "integrity": "sha512-W6Aq6+Py2Pt0zA6wl5A3rMg3BGwJEWUoUsRftRGXdodf4ywgx3JkkLoncz6dIg9mKs2m8uVqlQ9s4OhYt3Cnww==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.6.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.7",
+      "integrity": "sha512-7viPMr0Z1S4O6ZnObYO7QcBm/saykXFMQOUckVLqsDV9VWcqtistvNr0/ghGk79cAwU5fVv6gBx8/beHlVhM5w==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.7.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.8",
+      "integrity": "sha512-sLHBlidXp95sZ4zcLXV+CDfRArCWSX/r5zv4/Dsp15oVZ+jwgY7E9QxGPIC+EQ7ejxDUXr2bYkbGjU1vo3rx5A==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.8.json"
+    },
+    {
+      "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.9",
+      "integrity": "sha512-Yq4QgkuVxhv0tZNgMPpycKAMj+M4+87hzloXuzinfiN7vok0f/HrvprBsOLJiU0f6QBey0BwuhpeXmspLeIk3g==",
+      "status": "accepted-input",
+      "registryPath": ".buildchain/publication/registry-inputs/0.1.0-alpha.9.json"
+    }
+  ]
+}
