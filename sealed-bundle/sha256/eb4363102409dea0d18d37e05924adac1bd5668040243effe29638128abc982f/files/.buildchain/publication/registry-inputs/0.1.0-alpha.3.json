@@ -1,0 +1,91 @@
+{
+  "appendOnly": true,
+  "contract": "kungfu-buildchain-publication-artifact-registry",
+  "historyPolicy": "cumulative-authenticated-hydration",
+  "immutablePathPolicy": "do-not-sync-delete-immutable-prefixes",
+  "publication": {
+    "canonicalUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/",
+    "id": "kfd-machine-life-roadmap",
+    "kind": "paper",
+    "latestEvidenceUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/buildchain.release.json",
+    "latestUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/",
+    "siteConsumers": [
+      "kungfu.tech",
+      "papers.libkungfu.dev"
+    ],
+    "title": "Semantic Autopoiesis: An Engineering Roadmap for Machine Life"
+  },
+  "registrySha256": "37d60ab9a7c3c1eddeb4136c7d6410ecc5e78354b36cd97176e471b6eb676176",
+  "sameVersionRepublish": "fail-on-digest-change",
+  "schemaVersion": 1,
+  "versions": [
+    {
+      "artifacts": [
+        {
+          "bytes": 314310,
+          "path": "_build/main.pdf",
+          "role": "primary",
+          "sha256": "c375f3e4a4bc53a790d191cf64b08fe04ebf51f7880146e4391c46f56e58d8c3",
+          "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/main.pdf"
+        }
+      ],
+      "immutableDigest": "sha256:713f1b7cb11d37664c8a0706730aa4312457f7fe3088b04bb29bb23114143f5a",
+      "immutableEvidenceSha256": "713f1b7cb11d37664c8a0706730aa4312457f7fe3088b04bb29bb23114143f5a",
+      "manifest": {
+        "path": ".buildchain/publication/publication-artifact.json",
+        "sha256": "6c020755b45087c594b3c0053fc1b2dedc95d6445eda572a315e404bc9bee4f7",
+        "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/publication-artifact.json"
+      },
+      "metadata": [
+        {
+          "bytes": 1720,
+          "path": "docs/MAP.md",
+          "sha256": "bd3779b4904093854b4469bb9e82a83347d2b968a7bbcbd008409157388e2e3c"
+        },
+        {
+          "bytes": 2949,
+          "path": "README.md",
+          "sha256": "173bc812aedcc08569d2163730040ff69c3de53a5febe7eb682b365474c62947"
+        },
+        {
+          "bytes": 65349,
+          "path": "site/brand-site.json",
+          "sha256": "f82d42ccf69cfa0ff943bcb7deff4e914dd31d234c1f6a017e8aeaf7094f744b"
+        },
+        {
+          "bytes": 1308,
+          "path": "site/site-bundles.json",
+          "sha256": "d573b4087b82f72362603ce6641db9a01176fcaa23cfa9c01f74dee2f729b56d"
+        }
+      ],
+      "passport": {
+        "path": ".buildchain/publication/publication-artifact-passport.json",
+        "sha256": "d0c73eae40fbfb90bb95108dd665c80fe019e63560ea821c8d0c7e3c06ec9c7c",
+        "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/publication-artifact-passport.json"
+      },
+      "publishedAt": "2026-07-30T10:18:39.389Z",
+      "recordSha256": "ad418a3a7babb3051a45c3e4cc00f570d6367fdfa567eec503c210fb55ccd031",
+      "routes": {
+        "artifactUrlPrefix": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/",
+        "canonicalUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/",
+        "immutableVersionPrefix": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/",
+        "immutableVersionUrl": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/",
+        "latestEvidenceUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/buildchain.release.json",
+        "latestUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/"
+      },
+      "source": {
+        "repository": "https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap",
+        "sha": "5ba911612144bccb010c5363b226bc4cda1388da",
+        "sourceBundle": {
+          "bytes": 54180,
+          "path": ".buildchain/publication/source.tar.gz",
+          "sha256": "df2275dcdea7ab520cae9ff2d8a3240e3ac9dcade883e2187a4b2e0e3dbd1643",
+          "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.3/source.tar.gz"
+        },
+        "treeSha": "337f9e88d5c36acbab7665bf7e165562a117c50f"
+      },
+      "status": "published",
+      "version": "0.1.0-alpha.3"
+    }
+  ]
+}

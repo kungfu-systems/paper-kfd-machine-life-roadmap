@@ -1,0 +1,353 @@
+{
+  "schema": 1,
+  "id": "f0b76a550bd7792eb8dc2f0ab43af5a335d26ed51584de37f4e0ec4191dd12fc",
+  "repository": "kungfu-systems/paper-kfd-machine-life-roadmap",
+  "target_ref": "alpha/v0/v0.1",
+  "source_sha": "a250035d7b4d2ab67944c8dff4bb2a8d67217454",
+  "release_sha": "a250035d7b4d2ab67944c8dff4bb2a8d67217454",
+  "release_material_sha": "a250035d7b4d2ab67944c8dff4bb2a8d67217454",
+  "publish_tooling_sha": "a250035d7b4d2ab67944c8dff4bb2a8d67217454",
+  "version": "0.1.0-alpha.6",
+  "exact_tag": "v0.1.0-alpha.6",
+  "channel": "alpha",
+  "line": "v0.1",
+  "version_strategy": "",
+  "lifecycle_identity": "lifecycle.publish",
+  "state_ref": "buildchain/release-state/0-1-0-alpha-6",
+  "state_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-state/v0.1.0-alpha.6.json",
+  "evidence_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-evidence/v0.1.0-alpha.6/evidence.json",
+  "state": "sealed",
+  "previous_state": "prepared",
+  "actor": "kungfu-origin",
+  "run_id": "30677397568",
+  "superseded_by": "",
+  "failure": "",
+  "artifacts": [],
+  "evidence": [],
+  "sealed_bundle": {
+    "schemaVersion": 1,
+    "contract": "kungfu-buildchain-publication-sealed-bundle",
+    "root": "sha256:eb4363102409dea0d18d37e05924adac1bd5668040243effe29638128abc982f",
+    "candidate": {
+      "schemaVersion": 1,
+      "contract": "kungfu-buildchain-publication-artifact-candidate",
+      "repository": "kungfu-systems/paper-kfd-machine-life-roadmap",
+      "sourceSha": "a250035d7b4d2ab67944c8dff4bb2a8d67217454",
+      "sourceTreeSha": "3f168da8b1460d60341498928a4c8e3f19c46324",
+      "runtimeSha": "f30bb2678cacbae947eb46411c13eda75e9e35b0",
+      "manifestDigest": "59e835d9216b352fb0fcaf0b99e7b6be8d3eed9f8627e469fb8fb1926145e580",
+      "passportDigest": "49c53918d1d295c70a80975817d6de6f0923dad4ab22c0dc44dd5a227c952cbb",
+      "controllerReceiptDigest": "6423c64f566bbb776f93c977a70439813c5d2e23d559d1e7e9b17b9a8daefaa9",
+      "files": [
+        {
+          "path": "_build/main.pdf",
+          "size": 406223,
+          "sha256": "2d0ffb740d799cd1a9d4bb5718e4f8b9a27ef6b2305d037008d0fa09e0e6e88d"
+        },
+        {
+          "path": ".buildchain/paper-release/build-summary.json",
+          "size": 1146,
+          "sha256": "7ead2458f6edb04fc72db62ce91645b0becf15713f76a5c8c27a8209829e5658"
+        },
+        {
+          "path": ".buildchain/paper-release/publish-required-artifacts.json",
+          "size": 387,
+          "sha256": "e99d837ae0d9239581213a6aa63e64572bd0ad66f825031c4114f573ffa3a478"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/_build/main.pdf",
+          "size": 406223,
+          "sha256": "2d0ffb740d799cd1a9d4bb5718e4f8b9a27ef6b2305d037008d0fa09e0e6e88d"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact-passport.json",
+          "size": 8627,
+          "sha256": "642a5d0939a402a2b7e17033c16ce684835dea9febe22e40978202ecc7c85bce"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact.json",
+          "size": 9204,
+          "sha256": "84429c82f1aae185e8018079bf81ed22b398cc5f98e38f692344cf2fa23688ee"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-registry.json",
+          "size": 22906,
+          "sha256": "84a63129ca260b7845b21c7a22cdc041369ed56fce25ac93228b94fa35da1c7e"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/registry-hydration.json",
+          "size": 2750,
+          "sha256": "865ec0006066603fa8e0b546a80f5fadf8b3b953b9f64af27304d2d38239ca9b"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/source.tar.gz",
+          "size": 58966,
+          "sha256": "bc16292ebcbeba6e88cad57e652f9e01b2f6bbaf87fc640fb40abfc734d0c8d5"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/buildchain-publication-package.json",
+          "size": 3397,
+          "sha256": "92aa553ca998e7efab406d5d89c239de65ca85bd3377fa9742eb3932739371d1"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/docs/MAP.md",
+          "size": 1720,
+          "sha256": "bd3779b4904093854b4469bb9e82a83347d2b968a7bbcbd008409157388e2e3c"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/package.json",
+          "size": 1697,
+          "sha256": "7ce9111eb296814d17f6bdaf637994c66759cb5a04909559cb2813fa8af3883e"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/README.md",
+          "size": 352,
+          "sha256": "2df2056d7e8a3758fb367433f64fb51b31f7f6d8b6f57321e0c0c642be2d6d61"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/site/brand-site.json",
+          "size": 65933,
+          "sha256": "7e44450cbc872a82727d7978bdc90d994d0692a3b9638cea4c60a311964d3133"
+        },
+        {
+          "path": ".buildchain/publication/npm-package/site/site-bundles.json",
+          "size": 1308,
+          "sha256": "29dc98085b8e19509f84b814fc3ca3728e994cfdba1801dcf41c5e55e6473209"
+        },
+        {
+          "path": ".buildchain/publication/npm-tarball/kungfu-tech-paper-kfd-machine-life-roadmap-0.1.0-alpha.6.tgz",
+          "size": 490893,
+          "sha256": "06eca63f3c87609b479423b2eeb26edf4c9fe40026a450b32c0941decc53e397"
+        },
+        {
+          "path": ".buildchain/publication/publication-artifact-passport.json",
+          "size": 8627,
+          "sha256": "642a5d0939a402a2b7e17033c16ce684835dea9febe22e40978202ecc7c85bce"
+        },
+        {
+          "path": ".buildchain/publication/publication-artifact.json",
+          "size": 9204,
+          "sha256": "84429c82f1aae185e8018079bf81ed22b398cc5f98e38f692344cf2fa23688ee"
+        },
+        {
+          "path": ".buildchain/publication/publication-registry.json",
+          "size": 22906,
+          "sha256": "84a63129ca260b7845b21c7a22cdc041369ed56fce25ac93228b94fa35da1c7e"
+        },
+        {
+          "path": ".buildchain/publication/registry-hydration.json",
+          "size": 2750,
+          "sha256": "865ec0006066603fa8e0b546a80f5fadf8b3b953b9f64af27304d2d38239ca9b"
+        },
+        {
+          "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.0.json",
+          "size": 3861,
+          "sha256": "2bd53e15bd0b723e3c15298d909fe5ba98fb9e0ad4ba780ca07a46857e5298bf"
+        },
+        {
+          "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.1.json",
+          "size": 3861,
+          "sha256": "0e0d7254184968e7cab595e189a62b84b554eb650293bc8eb9abbc95d4a02193"
+        },
+        {
+          "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.2.json",
+          "size": 3827,
+          "sha256": "8e83771d54433153e0429be392382ba124ae09925651d079dacb5d5277910af3"
+        },
+        {
+          "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.3.json",
+          "size": 4201,
+          "sha256": "150ffde842688e26859aaaa19dd16db0f1f640cb1563ed93162a496c94225e5e"
+        },
+        {
+          "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.4.json",
+          "size": 16318,
+          "sha256": "151e8bc31a660d9153ea158fae1fecf3dff246624b70b60cb5bff0ee965169c6"
+        },
+        {
+          "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.5.json",
+          "size": 19612,
+          "sha256": "347bcafe1009c4cf5b01e7ceeab76b64e54d484e06166aa5b0d6541c44316dbc"
+        },
+        {
+          "path": ".buildchain/publication/reproducibility-receipt.json",
+          "size": 24949,
+          "sha256": "bd38e9abf8760a18905cd1910619740987caef9a98572bd97acc77301651437d"
+        },
+        {
+          "path": ".buildchain/publication/source.tar.gz",
+          "size": 58966,
+          "sha256": "bc16292ebcbeba6e88cad57e652f9e01b2f6bbaf87fc640fb40abfc734d0c8d5"
+        }
+      ],
+      "candidateDigest": "eb4363102409dea0d18d37e05924adac1bd5668040243effe29638128abc982f"
+    },
+    "files": [
+      {
+        "path": "_build/main.pdf",
+        "size": 406223,
+        "sha256": "2d0ffb740d799cd1a9d4bb5718e4f8b9a27ef6b2305d037008d0fa09e0e6e88d"
+      },
+      {
+        "path": ".buildchain/paper-release/build-summary.json",
+        "size": 1146,
+        "sha256": "7ead2458f6edb04fc72db62ce91645b0becf15713f76a5c8c27a8209829e5658"
+      },
+      {
+        "path": ".buildchain/paper-release/publish-required-artifacts.json",
+        "size": 387,
+        "sha256": "e99d837ae0d9239581213a6aa63e64572bd0ad66f825031c4114f573ffa3a478"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/_build/main.pdf",
+        "size": 406223,
+        "sha256": "2d0ffb740d799cd1a9d4bb5718e4f8b9a27ef6b2305d037008d0fa09e0e6e88d"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact-passport.json",
+        "size": 8627,
+        "sha256": "642a5d0939a402a2b7e17033c16ce684835dea9febe22e40978202ecc7c85bce"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact.json",
+        "size": 9204,
+        "sha256": "84429c82f1aae185e8018079bf81ed22b398cc5f98e38f692344cf2fa23688ee"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-registry.json",
+        "size": 22906,
+        "sha256": "84a63129ca260b7845b21c7a22cdc041369ed56fce25ac93228b94fa35da1c7e"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/.buildchain/publication/registry-hydration.json",
+        "size": 2750,
+        "sha256": "865ec0006066603fa8e0b546a80f5fadf8b3b953b9f64af27304d2d38239ca9b"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/.buildchain/publication/source.tar.gz",
+        "size": 58966,
+        "sha256": "bc16292ebcbeba6e88cad57e652f9e01b2f6bbaf87fc640fb40abfc734d0c8d5"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/buildchain-publication-package.json",
+        "size": 3397,
+        "sha256": "92aa553ca998e7efab406d5d89c239de65ca85bd3377fa9742eb3932739371d1"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/docs/MAP.md",
+        "size": 1720,
+        "sha256": "bd3779b4904093854b4469bb9e82a83347d2b968a7bbcbd008409157388e2e3c"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/package.json",
+        "size": 1697,
+        "sha256": "7ce9111eb296814d17f6bdaf637994c66759cb5a04909559cb2813fa8af3883e"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/README.md",
+        "size": 352,
+        "sha256": "2df2056d7e8a3758fb367433f64fb51b31f7f6d8b6f57321e0c0c642be2d6d61"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/site/brand-site.json",
+        "size": 65933,
+        "sha256": "7e44450cbc872a82727d7978bdc90d994d0692a3b9638cea4c60a311964d3133"
+      },
+      {
+        "path": ".buildchain/publication/npm-package/site/site-bundles.json",
+        "size": 1308,
+        "sha256": "29dc98085b8e19509f84b814fc3ca3728e994cfdba1801dcf41c5e55e6473209"
+      },
+      {
+        "path": ".buildchain/publication/npm-tarball/kungfu-tech-paper-kfd-machine-life-roadmap-0.1.0-alpha.6.tgz",
+        "size": 490893,
+        "sha256": "06eca63f3c87609b479423b2eeb26edf4c9fe40026a450b32c0941decc53e397"
+      },
+      {
+        "path": ".buildchain/publication/publication-artifact-passport.json",
+        "size": 8627,
+        "sha256": "642a5d0939a402a2b7e17033c16ce684835dea9febe22e40978202ecc7c85bce"
+      },
+      {
+        "path": ".buildchain/publication/publication-artifact.json",
+        "size": 9204,
+        "sha256": "84429c82f1aae185e8018079bf81ed22b398cc5f98e38f692344cf2fa23688ee"
+      },
+      {
+        "path": ".buildchain/publication/publication-registry.json",
+        "size": 22906,
+        "sha256": "84a63129ca260b7845b21c7a22cdc041369ed56fce25ac93228b94fa35da1c7e"
+      },
+      {
+        "path": ".buildchain/publication/registry-hydration.json",
+        "size": 2750,
+        "sha256": "865ec0006066603fa8e0b546a80f5fadf8b3b953b9f64af27304d2d38239ca9b"
+      },
+      {
+        "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.0.json",
+        "size": 3861,
+        "sha256": "2bd53e15bd0b723e3c15298d909fe5ba98fb9e0ad4ba780ca07a46857e5298bf"
+      },
+      {
+        "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.1.json",
+        "size": 3861,
+        "sha256": "0e0d7254184968e7cab595e189a62b84b554eb650293bc8eb9abbc95d4a02193"
+      },
+      {
+        "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.2.json",
+        "size": 3827,
+        "sha256": "8e83771d54433153e0429be392382ba124ae09925651d079dacb5d5277910af3"
+      },
+      {
+        "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.3.json",
+        "size": 4201,
+        "sha256": "150ffde842688e26859aaaa19dd16db0f1f640cb1563ed93162a496c94225e5e"
+      },
+      {
+        "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.4.json",
+        "size": 16318,
+        "sha256": "151e8bc31a660d9153ea158fae1fecf3dff246624b70b60cb5bff0ee965169c6"
+      },
+      {
+        "path": ".buildchain/publication/registry-inputs/0.1.0-alpha.5.json",
+        "size": 19612,
+        "sha256": "347bcafe1009c4cf5b01e7ceeab76b64e54d484e06166aa5b0d6541c44316dbc"
+      },
+      {
+        "path": ".buildchain/publication/reproducibility-receipt.json",
+        "size": 24949,
+        "sha256": "bd38e9abf8760a18905cd1910619740987caef9a98572bd97acc77301651437d"
+      },
+      {
+        "path": ".buildchain/publication/source.tar.gz",
+        "size": 58966,
+        "sha256": "bc16292ebcbeba6e88cad57e652f9e01b2f6bbaf87fc640fb40abfc734d0c8d5"
+      }
+    ],
+    "npm": {
+      "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+      "version": "0.1.0-alpha.6",
+      "path": ".buildchain/publication/npm-tarball/kungfu-tech-paper-kfd-machine-life-roadmap-0.1.0-alpha.6.tgz",
+      "size": 490893,
+      "sha256": "06eca63f3c87609b479423b2eeb26edf4c9fe40026a450b32c0941decc53e397",
+      "integrity": "sha512-W6Aq6+Py2Pt0zA6wl5A3rMg3BGwJEWUoUsRftRGXdodf4ywgx3JkkLoncz6dIg9mKs2m8uVqlQ9s4OhYt3Cnww=="
+    },
+    "releaseAssets": [
+      {
+        "path": "_build/main.pdf",
+        "size": 406223,
+        "sha256": "2d0ffb740d799cd1a9d4bb5718e4f8b9a27ef6b2305d037008d0fa09e0e6e88d"
+      }
+    ],
+    "completion": {
+      "githubReleaseRequired": true
+    },
+    "durablePath": "sealed-bundle/sha256/eb4363102409dea0d18d37e05924adac1bd5668040243effe29638128abc982f",
+    "resumeCommand": "buildchain paper resume --version \"0.1.0-alpha.6\" --state-ref \"refs/heads/buildchain/release-state/0-1-0-alpha-6\""
+  },
+  "publication_state": "sealed",
+  "milestones": {},
+  "resume_command": "buildchain paper resume --version \"0.1.0-alpha.6\" --state-ref \"refs/heads/buildchain/release-state/0-1-0-alpha-6\"",
+  "created_at": "2026-08-01T01:14:30.937Z",
+  "updated_at": "2026-08-01T01:14:30.938Z"
+}
