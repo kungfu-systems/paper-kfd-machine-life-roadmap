@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-machine-life-site-bundles-index",
+  "source": {
+    "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+    "packageVersion": "0.1.0-alpha.7",
+    "repository": "git+https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap.git",
+    "titleSource": ".buildchain/buildchain.toml",
+    "paperEntrypoint": "paper/main.tex",
+    "sectionSources": [
+      "paper/sections/01-introduction.tex",
+      "paper/sections/02-life-as-an-engineering-property.tex",
+      "paper/sections/03-semantic-kernel.tex",
+      "paper/sections/04-recursive-dogfood.tex",
+      "paper/sections/05-material-anatomy.tex",
+      "paper/sections/06-kungfu-evidence.tex",
+      "paper/sections/07-prototype-and-roadmap.tex",
+      "paper/sections/08-evaluation-and-safety.tex",
+      "paper/sections/09-related-work.tex",
+      "paper/sections/10-discussion.tex",
+      "paper/sections/11-conclusion.tex"
+    ],
+    "bibliography": "paper/references.bib",
+    "buildchainConfig": ".buildchain/buildchain.toml"
+  },
+  "bundles": [
+    {
+      "id": "brand",
+      "consumer": "kungfu.tech",
+      "path": "site/brand-site.json",
+      "contract": "kungfu-machine-life-brand-site-bundle",
+      "purpose": "Future-facing Machine Life reader for the Kungfu main site."
+    }
+  ]
+}

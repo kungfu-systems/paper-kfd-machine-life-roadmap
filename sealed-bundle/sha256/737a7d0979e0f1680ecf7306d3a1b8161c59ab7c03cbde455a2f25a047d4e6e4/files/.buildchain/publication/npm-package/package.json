@@ -1,0 +1,46 @@
+{
+  "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+  "version": "0.1.0-alpha.7",
+  "private": false,
+  "description": "Semantic Autopoiesis: An Engineering Roadmap for Machine Life publication artifact package.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap.git"
+  },
+  "type": "module",
+  "files": [
+    ".buildchain/publication/",
+    "buildchain-publication-package.json",
+    "_build/main.pdf",
+    "_build/main.pdf",
+    "_build/main.pdf",
+    "README.md",
+    "docs/MAP.md",
+    "site/brand-site.json",
+    "site/site-bundles.json"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./publication-artifact.json": "./.buildchain/publication/publication-artifact.json",
+    "./publication-artifact-passport.json": "./.buildchain/publication/publication-artifact-passport.json",
+    "./publication-registry.json": "./.buildchain/publication/publication-registry.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "buildchain": {
+    "contract": "kungfu-buildchain-publication-npm-package",
+    "publicationManifest": ".buildchain/publication/publication-artifact.json",
+    "publicationPassport": ".buildchain/publication/publication-artifact-passport.json",
+    "publicationRegistry": ".buildchain/publication/publication-registry.json",
+    "publicationRegistryHydration": ".buildchain/publication/registry-hydration.json",
+    "primaryArtifact": "_build/main.pdf",
+    "sourceBundle": ".buildchain/publication/source.tar.gz",
+    "siteConsumers": [
+      "kungfu.tech",
+      "papers.libkungfu.dev"
+    ]
+  }
+}
