@@ -151,8 +151,9 @@ export const buildSiteBundles = () => {
       canonicalUrl: "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap",
       indexPath: "/whitepaper",
       indexUrl: "https://kungfu.tech/whitepaper",
-      pdfPath: "/whitepaper/kfd-machine-life-roadmap.pdf",
-      pdfUrl: "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap.pdf",
+      pdfPath: "/whitepaper/kungfu-machine-life.pdf",
+      pdfUrl: "https://kungfu.tech/whitepaper/kungfu-machine-life.pdf",
+      pdfAliases: ["/whitepaper/kfd-machine-life-roadmap.pdf"],
       evidenceUrl: "https://papers.libkungfu.dev/kfd-machine-life-roadmap/",
     },
     hero: {

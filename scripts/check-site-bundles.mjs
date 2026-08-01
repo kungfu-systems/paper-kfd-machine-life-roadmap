@@ -29,8 +29,11 @@ if (brand.contract !== "kungfu-machine-life-brand-site-bundle" || brand.consumer
 if (brand.routes?.canonicalUrl !== "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap") {
   fail("brand bundle must declare the canonical kungfu.tech Machine Life reader");
 }
-if (brand.routes?.pdfUrl !== "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap.pdf") {
+if (brand.routes?.pdfUrl !== "https://kungfu.tech/whitepaper/kungfu-machine-life.pdf") {
   fail("brand bundle must declare the local Machine Life PDF route");
+}
+if (JSON.stringify(brand.routes?.pdfAliases) !== JSON.stringify(["/whitepaper/kfd-machine-life-roadmap.pdf"])) {
+  fail("brand bundle must preserve the previous Machine Life PDF route as an alias");
 }
 if (brand.routes?.evidenceUrl !== "https://papers.libkungfu.dev/kfd-machine-life-roadmap/") {
   fail("brand bundle must preserve papers.libkungfu.dev as the evidence authority");
