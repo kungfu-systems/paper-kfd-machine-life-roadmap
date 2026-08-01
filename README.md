@@ -49,6 +49,8 @@ The npm publication includes a generated brand-site bundle for the canonical
 Machine Life reader on `kungfu.tech`. The bundle derives its complete section
 order and reader Markdown from the LaTeX source while preserving the paper's
 future-facing, functional, falsifiable, and non-consciousness claim boundary.
+Its canonical brand-site PDF route is `/whitepaper/kungfu-machine-life.pdf`;
+the previous filename remains declared as a compatibility alias.
 
 Regenerate it after changing the paper source or publication metadata:
 
