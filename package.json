@@ -19,7 +19,7 @@
     "paper:agent:verify": "buildchain paper agent verify --json"
   },
   "devDependencies": {
-    "@kungfu-tech/buildchain": "3.0.4-alpha.1"
+    "@kungfu-tech/buildchain": "3.0.4-alpha.2"
   },
   "packageManager": "pnpm@11.7.0"
 }
