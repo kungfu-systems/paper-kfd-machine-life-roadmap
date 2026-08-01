@@ -16,8 +16,8 @@
   "state_ref": "buildchain/release-state/0-1-0-alpha-8",
   "state_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-state/v0.1.0-alpha.8.json",
   "evidence_path": "/home/runner/work/paper-kfd-machine-life-roadmap/paper-kfd-machine-life-roadmap/.buildchain/release-evidence/v0.1.0-alpha.8/evidence.json",
-  "state": "sealed",
-  "previous_state": "prepared",
+  "state": "publishing",
+  "previous_state": "sealed",
   "actor": "dongkeren",
   "run_id": "30695596381",
   "superseded_by": "",
@@ -369,5 +369,5 @@
   "milestones": {},
   "resume_command": "buildchain paper resume --version \"0.1.0-alpha.8\" --state-ref \"refs/heads/buildchain/release-state/0-1-0-alpha-8\"",
   "created_at": "2026-08-01T10:24:38.815Z",
-  "updated_at": "2026-08-01T10:24:38.816Z"
+  "updated_at": "2026-08-01T10:24:47.743Z"
 }
