@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "contract": "kungfu-buildchain-artifact-evidence",
+  "repository": "kungfu-systems/paper-kfd-machine-life-roadmap",
+  "release": {
+    "tag": "v0.1.0-alpha.6",
+    "sourceSha": "a250035d7b4d2ab67944c8dff4bb2a8d67217454"
+  },
+  "generatedAt": "2026-08-01T03:36:04.800Z",
+  "runner": {
+    "kind": "github-hosted",
+    "os": "Linux",
+    "arch": "X64",
+    "labels": [],
+    "image": "ubuntu24"
+  },
+  "workflow": {
+    "name": "Paper Release",
+    "runId": "30682241224",
+    "runAttempt": "1",
+    "url": "https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap/actions/runs/30682241224"
+  },
+  "artifacts": []
+}
