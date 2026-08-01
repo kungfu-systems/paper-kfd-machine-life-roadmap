@@ -23,7 +23,7 @@
           "productionReleaseHeadPrefix": "feature/release-",
           "productionStatusUrl": "https://kungfu.tech/.well-known/kungfu-release-status.json",
           "readbackUrls": [
-            "https://kungfu.tech/whitepaper/kfd-machine-life-roadmap/manifest.json"
+            "https://kungfu.tech/whitepaper/kungfu-machine-life/manifest.json"
           ],
           "updateCommand": "node scripts/paper-propagation.mjs --lock \"$BUILDCHAIN_PROPAGATION_LOCK_PATH\"",
           "prepareCommand": "corepack pnpm@11.7.0 install --lockfile-only --ignore-scripts --registry=https://registry.npmjs.org/ --config.minimumReleaseAge=0 && corepack pnpm@11.7.0 install --frozen-lockfile --ignore-scripts --registry=https://registry.npmjs.org/ --config.minimumReleaseAge=0",
