@@ -4,7 +4,7 @@
   "consumer": "kungfu.tech",
   "source": {
     "package": "@kungfu-tech/paper-kfd-machine-life-roadmap",
-    "packageVersion": "0.1.0-alpha.8",
+    "packageVersion": "0.1.0-alpha.9",
     "repository": "git+https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap.git",
     "titleSource": ".buildchain/buildchain.toml",
     "paperEntrypoint": "paper/main.tex",
