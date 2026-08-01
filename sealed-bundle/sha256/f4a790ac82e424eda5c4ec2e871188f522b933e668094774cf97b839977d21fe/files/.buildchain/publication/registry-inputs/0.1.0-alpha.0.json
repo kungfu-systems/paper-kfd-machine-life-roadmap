@@ -1,0 +1,80 @@
+{
+  "appendOnly": true,
+  "contract": "kungfu-buildchain-publication-artifact-registry",
+  "historyPolicy": "cumulative-authenticated-hydration",
+  "immutablePathPolicy": "do-not-sync-delete-immutable-prefixes",
+  "publication": {
+    "canonicalUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/",
+    "id": "kfd-machine-life-roadmap",
+    "kind": "paper",
+    "latestEvidenceUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/buildchain.release.json",
+    "latestUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/",
+    "siteConsumers": [
+      "papers.libkungfu.dev"
+    ],
+    "title": "Semantic Autopoiesis: An Engineering Roadmap for Machine Life through KFD and Recursive Dogfood"
+  },
+  "registrySha256": "6f5e01b866df2485767d2119f40b59d446f1e36912823e4f97c630b56b4b5497",
+  "sameVersionRepublish": "fail-on-digest-change",
+  "schemaVersion": 1,
+  "versions": [
+    {
+      "artifacts": [
+        {
+          "bytes": 273888,
+          "path": "_build/main.pdf",
+          "role": "primary",
+          "sha256": "684e62293b6ee64894940af2b398e404fee126e4148305e94de7d6c0e40a00ac",
+          "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/main.pdf"
+        }
+      ],
+      "immutableDigest": "sha256:b4a9e3c8d84c109e00d774249b16525058b2209787b735de375364d1489606ca",
+      "immutableEvidenceSha256": "b4a9e3c8d84c109e00d774249b16525058b2209787b735de375364d1489606ca",
+      "manifest": {
+        "path": ".buildchain/publication/publication-artifact.json",
+        "sha256": "fb3aaf8622127f87da72a917a2aecf400df8dc6fbe1aa137932c1fa6ad90171a",
+        "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/publication-artifact.json"
+      },
+      "metadata": [
+        {
+          "bytes": 1383,
+          "path": "docs/MAP.md",
+          "sha256": "563d4c91bd7ed8e16dc48adc586ae35921397c488f3b5b9540d1cac4597303d2"
+        },
+        {
+          "bytes": 2272,
+          "path": "README.md",
+          "sha256": "aca663f68c8e5d0fa42345bec3b4675e09b0df6b97fd69a3439476f798bc3ca9"
+        }
+      ],
+      "passport": {
+        "path": ".buildchain/publication/publication-artifact-passport.json",
+        "sha256": "790215956d2e414116be4ab3a71e41b866af08121536014be92ad7d5a842bed1",
+        "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/publication-artifact-passport.json"
+      },
+      "publishedAt": "2026-07-29T13:06:58.135Z",
+      "recordSha256": "1565d6b8d721daa53e6f597b8ef60287f9f101b310f5c195581df3b82c0b4846",
+      "routes": {
+        "artifactUrlPrefix": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/",
+        "canonicalUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/",
+        "immutableVersionPrefix": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/",
+        "immutableVersionUrl": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/",
+        "latestEvidenceUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/buildchain.release.json",
+        "latestUrl": "https://papers.libkungfu.dev/kfd-machine-life-roadmap/latest/"
+      },
+      "source": {
+        "repository": "https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap",
+        "sha": "c5e850b522f47e69f7977c6e0470e11321630b1f",
+        "sourceBundle": {
+          "bytes": 25881,
+          "path": ".buildchain/publication/source.tar.gz",
+          "sha256": "dc37453f75e5eb77e8e506e0638d4b153568803402abcdd405b0631e20f3f69a",
+          "url": "https://papers.libkungfu.dev/archive/kfd-machine-life-roadmap/v0.1.0-alpha.0/source.tar.gz"
+        },
+        "treeSha": "acd1f08c85eeed820bcdecc12ef071d02203a09c"
+      },
+      "status": "published",
+      "version": "0.1.0-alpha.0"
+    }
+  ]
+}

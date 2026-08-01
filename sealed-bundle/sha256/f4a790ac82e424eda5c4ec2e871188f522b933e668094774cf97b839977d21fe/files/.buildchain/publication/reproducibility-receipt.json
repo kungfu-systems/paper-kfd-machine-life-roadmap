@@ -1,0 +1,795 @@
+{
+  "builds": [
+    {
+      "artifacts": [
+        {
+          "bytes": 406200,
+          "path": "_build/main.pdf",
+          "pdfMetadata": {
+            "creationDates": [
+              "D:20260801102250Z"
+            ],
+            "documentIds": [
+              [
+                "FED39E38D68E842F1664EA4948704A21",
+                "FED39E38D68E842F1664EA4948704A21"
+              ]
+            ],
+            "metadataRoot": "sha256:02a6df3cfcf28927ea63fa49aa119950cecf45973054bc540e96338c47dab763",
+            "modificationDates": [
+              "D:20260801102250Z"
+            ]
+          },
+          "sha256": "64be2c2b22b95846ecd9fdde871d840ce911a2543035093e2c4ac1f5c3977418"
+        }
+      ],
+      "buildId": "build-1",
+      "npmPackage": {
+        "bytes": 492227,
+        "filename": "kungfu-tech-paper-kfd-machine-life-roadmap-0.1.0-alpha.8.tgz",
+        "integrity": "sha512-sLHBlidXp95sZ4zcLXV+CDfRArCWSX/r5zv4/Dsp15oVZ+jwgY7E9QxGPIC+EQ7ejxDUXr2bYkbGjU1vo3rx5A==",
+        "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+        "sha256": "c7bfce3b189659bb7d0d1d4a91b2a51f369a302b791c18d684e6b8d13affaf39",
+        "shasum": "65e912a838dcbda4bdeca2bb2e3c515b228f598e",
+        "version": "0.1.0-alpha.8"
+      },
+      "outputSetRoot": "sha256:2e07ca14505cfff3a2c0bb368fa673613a2d0805947ee714019787c83f5e5a51",
+      "packageFiles": [
+        {
+          "bytes": 8627,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact-passport.json",
+          "sha256": "60e443bec96b6c4e21fab8cfc2ec7154c1c335eb79c2d72b8a564592ceab7c15"
+        },
+        {
+          "bytes": 9204,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact.json",
+          "sha256": "25c9179b02372e96257ce963a581e0ef0ab0a9a64c6604ff3788adf5614813e1"
+        },
+        {
+          "bytes": 29494,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-registry.json",
+          "sha256": "03e8d728a64fa83bb93b71328665d3d6c7b69f7777081ca6c09a0f270b318139"
+        },
+        {
+          "bytes": 3442,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/registry-hydration.json",
+          "sha256": "384c1ec9bf1bac5c9ccb026b0e6a1d59c821b5832602b623f45f3ae633654573"
+        },
+        {
+          "bytes": 59174,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/source.tar.gz",
+          "sha256": "6f27d0d4708a9188f9b22f69f28ee2cb3d5f48691c385772a7ca672f770f440d"
+        },
+        {
+          "bytes": 352,
+          "path": ".buildchain/publication/npm-package/README.md",
+          "sha256": "2df2056d7e8a3758fb367433f64fb51b31f7f6d8b6f57321e0c0c642be2d6d61"
+        },
+        {
+          "bytes": 406200,
+          "path": ".buildchain/publication/npm-package/_build/main.pdf",
+          "sha256": "64be2c2b22b95846ecd9fdde871d840ce911a2543035093e2c4ac1f5c3977418"
+        },
+        {
+          "bytes": 3397,
+          "path": ".buildchain/publication/npm-package/buildchain-publication-package.json",
+          "sha256": "70c22666cf2f300f83bb4540efc84164ecaf23cfa41d49e87f720aa1d0d559ca"
+        },
+        {
+          "bytes": 1720,
+          "path": ".buildchain/publication/npm-package/docs/MAP.md",
+          "sha256": "bd3779b4904093854b4469bb9e82a83347d2b968a7bbcbd008409157388e2e3c"
+        },
+        {
+          "bytes": 1754,
+          "path": ".buildchain/publication/npm-package/package.json",
+          "sha256": "a60256bc92fcf146271b5feb553a7ccc26875f76fab75aab10dd12fec4aa3756"
+        },
+        {
+          "bytes": 65864,
+          "path": ".buildchain/publication/npm-package/site/brand-site.json",
+          "sha256": "1c2101d35d9c308d0b116b1c934f2a74c4b186d8aa1ff241595f76adab38d506"
+        },
+        {
+          "bytes": 1308,
+          "path": ".buildchain/publication/npm-package/site/site-bundles.json",
+          "sha256": "6e86ab19d22ae76b07d8feeed7a185dd5370f63a6ba7ae3b82234da011763c02"
+        }
+      ],
+      "publication": {
+        "manifestPath": ".buildchain/publication/publication-artifact.json",
+        "passportPath": ".buildchain/publication/publication-artifact-passport.json",
+        "registryPath": ".buildchain/publication/publication-registry.json"
+      },
+      "publicationEvidence": [
+        {
+          "bytes": 9204,
+          "path": ".buildchain/publication/publication-artifact.json",
+          "sha256": "25c9179b02372e96257ce963a581e0ef0ab0a9a64c6604ff3788adf5614813e1"
+        },
+        {
+          "bytes": 8627,
+          "path": ".buildchain/publication/publication-artifact-passport.json",
+          "sha256": "60e443bec96b6c4e21fab8cfc2ec7154c1c335eb79c2d72b8a564592ceab7c15"
+        },
+        {
+          "bytes": 29494,
+          "path": ".buildchain/publication/publication-registry.json",
+          "sha256": "03e8d728a64fa83bb93b71328665d3d6c7b69f7777081ca6c09a0f270b318139"
+        }
+      ],
+      "sourceBundle": {
+        "bytes": 59174,
+        "path": ".buildchain/publication/source.tar.gz",
+        "sha256": "6f27d0d4708a9188f9b22f69f28ee2cb3d5f48691c385772a7ca672f770f440d"
+      },
+      "sourceBundleArchive": {
+        "entries": [
+          {
+            "gid": 0,
+            "mode": 438,
+            "mtime": 1785579770,
+            "path": "pax_global_header",
+            "size": 52,
+            "type": "g",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "LICENSE",
+            "size": 11357,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "Makefile",
+            "size": 562,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "README.md",
+            "size": 3724,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "paper/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/kungfu-machine-life.sty",
+            "size": 6104,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/main.tex",
+            "size": 10687,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/references.bib",
+            "size": 6508,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "paper/sections/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/01-introduction.tex",
+            "size": 10195,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/02-life-as-an-engineering-property.tex",
+            "size": 5370,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/03-semantic-kernel.tex",
+            "size": 4699,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/04-recursive-dogfood.tex",
+            "size": 4634,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/05-material-anatomy.tex",
+            "size": 5901,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/06-kungfu-evidence.tex",
+            "size": 11515,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/07-prototype-and-roadmap.tex",
+            "size": 7104,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/08-evaluation-and-safety.tex",
+            "size": 4591,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/09-related-work.tex",
+            "size": 3902,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/10-discussion.tex",
+            "size": 4221,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/11-conclusion.tex",
+            "size": 2439,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "scripts/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "scripts/check-site-bundles.mjs",
+            "size": 3076,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "scripts/update-site-bundles.mjs",
+            "size": 8382,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "site/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "site/brand-site.json",
+            "size": 65864,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "site/site-bundles.json",
+            "size": 1308,
+            "type": "0",
+            "uid": 0
+          }
+        ],
+        "entryCount": 26,
+        "metadataRoot": "sha256:6733f751f843f8e814b9750e7d30462aad0d70a2665c4adfc5d4a0054a371ade",
+        "mtimePolicy": "source-date-epoch",
+        "normalized": true,
+        "ordering": "optional-pax-header-then-lexicographic",
+        "orderingDifference": null,
+        "orderingNormalized": true,
+        "ownerPolicy": "root-zero",
+        "ownersNormalized": true,
+        "timestampsNormalized": true
+      },
+      "workspace": {
+        "cache": "isolated-per-build",
+        "class": "independent-local-git-clone",
+        "network": "disabled-during-build"
+      }
+    },
+    {
+      "artifacts": [
+        {
+          "bytes": 406200,
+          "path": "_build/main.pdf",
+          "pdfMetadata": {
+            "creationDates": [
+              "D:20260801102250Z"
+            ],
+            "documentIds": [
+              [
+                "FED39E38D68E842F1664EA4948704A21",
+                "FED39E38D68E842F1664EA4948704A21"
+              ]
+            ],
+            "metadataRoot": "sha256:02a6df3cfcf28927ea63fa49aa119950cecf45973054bc540e96338c47dab763",
+            "modificationDates": [
+              "D:20260801102250Z"
+            ]
+          },
+          "sha256": "64be2c2b22b95846ecd9fdde871d840ce911a2543035093e2c4ac1f5c3977418"
+        }
+      ],
+      "buildId": "build-2",
+      "npmPackage": {
+        "bytes": 492227,
+        "filename": "kungfu-tech-paper-kfd-machine-life-roadmap-0.1.0-alpha.8.tgz",
+        "integrity": "sha512-sLHBlidXp95sZ4zcLXV+CDfRArCWSX/r5zv4/Dsp15oVZ+jwgY7E9QxGPIC+EQ7ejxDUXr2bYkbGjU1vo3rx5A==",
+        "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+        "sha256": "c7bfce3b189659bb7d0d1d4a91b2a51f369a302b791c18d684e6b8d13affaf39",
+        "shasum": "65e912a838dcbda4bdeca2bb2e3c515b228f598e",
+        "version": "0.1.0-alpha.8"
+      },
+      "outputSetRoot": "sha256:2e07ca14505cfff3a2c0bb368fa673613a2d0805947ee714019787c83f5e5a51",
+      "packageFiles": [
+        {
+          "bytes": 8627,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact-passport.json",
+          "sha256": "60e443bec96b6c4e21fab8cfc2ec7154c1c335eb79c2d72b8a564592ceab7c15"
+        },
+        {
+          "bytes": 9204,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-artifact.json",
+          "sha256": "25c9179b02372e96257ce963a581e0ef0ab0a9a64c6604ff3788adf5614813e1"
+        },
+        {
+          "bytes": 29494,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/publication-registry.json",
+          "sha256": "03e8d728a64fa83bb93b71328665d3d6c7b69f7777081ca6c09a0f270b318139"
+        },
+        {
+          "bytes": 3442,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/registry-hydration.json",
+          "sha256": "384c1ec9bf1bac5c9ccb026b0e6a1d59c821b5832602b623f45f3ae633654573"
+        },
+        {
+          "bytes": 59174,
+          "path": ".buildchain/publication/npm-package/.buildchain/publication/source.tar.gz",
+          "sha256": "6f27d0d4708a9188f9b22f69f28ee2cb3d5f48691c385772a7ca672f770f440d"
+        },
+        {
+          "bytes": 352,
+          "path": ".buildchain/publication/npm-package/README.md",
+          "sha256": "2df2056d7e8a3758fb367433f64fb51b31f7f6d8b6f57321e0c0c642be2d6d61"
+        },
+        {
+          "bytes": 406200,
+          "path": ".buildchain/publication/npm-package/_build/main.pdf",
+          "sha256": "64be2c2b22b95846ecd9fdde871d840ce911a2543035093e2c4ac1f5c3977418"
+        },
+        {
+          "bytes": 3397,
+          "path": ".buildchain/publication/npm-package/buildchain-publication-package.json",
+          "sha256": "70c22666cf2f300f83bb4540efc84164ecaf23cfa41d49e87f720aa1d0d559ca"
+        },
+        {
+          "bytes": 1720,
+          "path": ".buildchain/publication/npm-package/docs/MAP.md",
+          "sha256": "bd3779b4904093854b4469bb9e82a83347d2b968a7bbcbd008409157388e2e3c"
+        },
+        {
+          "bytes": 1754,
+          "path": ".buildchain/publication/npm-package/package.json",
+          "sha256": "a60256bc92fcf146271b5feb553a7ccc26875f76fab75aab10dd12fec4aa3756"
+        },
+        {
+          "bytes": 65864,
+          "path": ".buildchain/publication/npm-package/site/brand-site.json",
+          "sha256": "1c2101d35d9c308d0b116b1c934f2a74c4b186d8aa1ff241595f76adab38d506"
+        },
+        {
+          "bytes": 1308,
+          "path": ".buildchain/publication/npm-package/site/site-bundles.json",
+          "sha256": "6e86ab19d22ae76b07d8feeed7a185dd5370f63a6ba7ae3b82234da011763c02"
+        }
+      ],
+      "publication": {
+        "manifestPath": ".buildchain/publication/publication-artifact.json",
+        "passportPath": ".buildchain/publication/publication-artifact-passport.json",
+        "registryPath": ".buildchain/publication/publication-registry.json"
+      },
+      "publicationEvidence": [
+        {
+          "bytes": 9204,
+          "path": ".buildchain/publication/publication-artifact.json",
+          "sha256": "25c9179b02372e96257ce963a581e0ef0ab0a9a64c6604ff3788adf5614813e1"
+        },
+        {
+          "bytes": 8627,
+          "path": ".buildchain/publication/publication-artifact-passport.json",
+          "sha256": "60e443bec96b6c4e21fab8cfc2ec7154c1c335eb79c2d72b8a564592ceab7c15"
+        },
+        {
+          "bytes": 29494,
+          "path": ".buildchain/publication/publication-registry.json",
+          "sha256": "03e8d728a64fa83bb93b71328665d3d6c7b69f7777081ca6c09a0f270b318139"
+        }
+      ],
+      "sourceBundle": {
+        "bytes": 59174,
+        "path": ".buildchain/publication/source.tar.gz",
+        "sha256": "6f27d0d4708a9188f9b22f69f28ee2cb3d5f48691c385772a7ca672f770f440d"
+      },
+      "sourceBundleArchive": {
+        "entries": [
+          {
+            "gid": 0,
+            "mode": 438,
+            "mtime": 1785579770,
+            "path": "pax_global_header",
+            "size": 52,
+            "type": "g",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "LICENSE",
+            "size": 11357,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "Makefile",
+            "size": 562,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "README.md",
+            "size": 3724,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "paper/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/kungfu-machine-life.sty",
+            "size": 6104,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/main.tex",
+            "size": 10687,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/references.bib",
+            "size": 6508,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "paper/sections/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/01-introduction.tex",
+            "size": 10195,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/02-life-as-an-engineering-property.tex",
+            "size": 5370,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/03-semantic-kernel.tex",
+            "size": 4699,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/04-recursive-dogfood.tex",
+            "size": 4634,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/05-material-anatomy.tex",
+            "size": 5901,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/06-kungfu-evidence.tex",
+            "size": 11515,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/07-prototype-and-roadmap.tex",
+            "size": 7104,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/08-evaluation-and-safety.tex",
+            "size": 4591,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/09-related-work.tex",
+            "size": 3902,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/10-discussion.tex",
+            "size": 4221,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "paper/sections/11-conclusion.tex",
+            "size": 2439,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "scripts/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "scripts/check-site-bundles.mjs",
+            "size": 3076,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "scripts/update-site-bundles.mjs",
+            "size": 8382,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 509,
+            "mtime": 1785579770,
+            "path": "site/",
+            "size": 0,
+            "type": "5",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "site/brand-site.json",
+            "size": 65864,
+            "type": "0",
+            "uid": 0
+          },
+          {
+            "gid": 0,
+            "mode": 436,
+            "mtime": 1785579770,
+            "path": "site/site-bundles.json",
+            "size": 1308,
+            "type": "0",
+            "uid": 0
+          }
+        ],
+        "entryCount": 26,
+        "metadataRoot": "sha256:6733f751f843f8e814b9750e7d30462aad0d70a2665c4adfc5d4a0054a371ade",
+        "mtimePolicy": "source-date-epoch",
+        "normalized": true,
+        "ordering": "optional-pax-header-then-lexicographic",
+        "orderingDifference": null,
+        "orderingNormalized": true,
+        "ownerPolicy": "root-zero",
+        "ownersNormalized": true,
+        "timestampsNormalized": true
+      },
+      "workspace": {
+        "cache": "isolated-per-build",
+        "class": "independent-local-git-clone",
+        "network": "disabled-during-build"
+      }
+    }
+  ],
+  "comparison": {
+    "firstDifference": null,
+    "status": "identical"
+  },
+  "contract": "kungfu-buildchain-publication-reproducibility-receipt",
+  "issues": [],
+  "policy": {
+    "admission": "fail-closed-before-alpha-or-release",
+    "artifactComparison": "exact-bytes",
+    "independentBuilds": 2,
+    "locale": "C.UTF-8",
+    "npmCache": "isolated-per-build",
+    "npmScripts": "disabled",
+    "sourceCheckout": "independent-local-git-clone",
+    "sourceTimestamp": "git-commit-time",
+    "timezone": "UTC"
+  },
+  "qualifying": true,
+  "receiptDigest": "sha256:f512d24823cc677dfff1697ab3b7494c7b37059f4df3cdb7ebc8cb9363e89f81",
+  "schemaVersion": 1,
+  "source": {
+    "projectPath": ".",
+    "repository": "https://github.com/kungfu-systems/paper-kfd-machine-life-roadmap",
+    "sha": "ece28683b2bd9fcef43f0d484c499e26dfb303da",
+    "sourceDateEpoch": "1785579770",
+    "treeSha": "2a1f1df251ef1f5c9b267c6defe3ab44e789fbd2"
+  },
+  "status": "passed",
+  "toolchain": {
+    "command": "mkdir -p _build && cd paper && latexmk -pdf -outdir=../_build main.tex",
+    "digest": "sha256:5ae0e5211ade2937b17a76502a4fd2bcecc5220bd10086ffe9739d5dbbc18d38",
+    "identityRoot": "sha256:6fa0771f823463ea2323084ac725f90f550b1f1f81edcbea5a04056713a4e5d3",
+    "image": "ghcr.io/kungfu-systems/build-images/latex-pdf-builder",
+    "imageRef": "ghcr.io/kungfu-systems/build-images/latex-pdf-builder@sha256:5ae0e5211ade2937b17a76502a4fd2bcecc5220bd10086ffe9739d5dbbc18d38",
+    "machineVerifiable": true,
+    "type": "latex-docker"
+  }
+}
