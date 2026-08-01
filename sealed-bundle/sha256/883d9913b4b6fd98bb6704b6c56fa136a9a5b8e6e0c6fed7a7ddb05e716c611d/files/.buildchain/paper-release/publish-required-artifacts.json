@@ -1,0 +1,11 @@
+[
+  {
+    "group": "node",
+    "kind": "npm",
+    "name": "@kungfu-tech/paper-kfd-machine-life-roadmap",
+    "ref": "0.1.0-alpha.11",
+    "digest": "sha512-HuVN4IezIL14cRm3nyrcQAptqt2/6liZgEvOVEGCpwDZgPjxElIKXbJm/V+IlJSajNaW/OtHJGzid0RZXFX0lQ==",
+    "integrity": "sha512-HuVN4IezIL14cRm3nyrcQAptqt2/6liZgEvOVEGCpwDZgPjxElIKXbJm/V+IlJSajNaW/OtHJGzid0RZXFX0lQ==",
+    "role": "main"
+  }
+]
