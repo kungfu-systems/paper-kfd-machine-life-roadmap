@@ -1,3 +1,22 @@
+---
+status: active
+period: ongoing
+theme: paper-buildchain-v4
+doc_type: reference
+source_level: local-files
+confidence: high
+sensitivity: public
+evidence_grade: A
+review_state: self-reviewed
+last_reviewed: 2026-09-06
+ai_provenance:
+  model_family: GPT-6
+  product: Codex
+  generated_at: 2026-09-06
+  visible_context: Repository files and Buildchain v4 migration contracts.
+  invisible_context_boundary: No private data or hidden model state inspected.
+---
+
 # Repository Map
 
 ## Paper
@@ -23,6 +42,6 @@
 ## Build and Governance
 
 - `.buildchain/buildchain.toml` — publication identity, toolchain, archive, and npm package declaration.
-- `.buildchain/*contract-lock.json` — pinned Buildchain contracts.
+- `.buildchain/*contract-lock.json` — accepted Buildchain v4 stable and v4-alpha development contracts.
 - `.github/workflows/` — Buildchain verification and release entrypoints.
 - `Makefile` — local source checks and optional PDF build.
